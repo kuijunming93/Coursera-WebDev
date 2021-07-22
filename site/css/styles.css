@@ -114,6 +114,13 @@ body { /** GENERIC STYLING OF TEXT **/
     }
 }
 
+@media (max-width: 400px) { /** THERE IS AN ISSUE WITH MOBILE VERSION, THE BANNER IS OVERLAPPED. THIS CODE IS NOT WORKING**/
+    .navbar-header button.navbar-toggle{
+        margin-bottom: 100px;
+    }
+}
+
+
 /** NAVBAR BUTTON STYLING **/
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar{
     border: 1px solid black;
