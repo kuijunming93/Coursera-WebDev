@@ -1,16 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Testing</h1>
-    <div>
-        Hello Coursera! Testing 2....
-    </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Happy Burger Restaurant</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <style type="text/css"></style>
+  </head>
 
+<body> <!-- MAIN CONTENT -->
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class = "container">
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left visible-lg visible-md">
+            <div id = "logo-img" alt="Logo"></div> 
+          </a> <!-- LOGO OBJECT -->
+
+          <div class="navbar-brand">
+            <a href="index.html" class="pull-left">
+              <h1>Happy Burger Restaurant</h1>
+            </a>
+            <p>
+              <img src="../images/halal-logo.jfif" alt="Halal Logo">
+              <span>Halal Certified</span>
+            </p> 
+          </div> <!-- TITLE OBJECT -->
+          
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div> <!-- NAVBAR HEADER OBJECT -->
+
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+          <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="menu-page.html">
+                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs">Menu</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">About</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-question-sign"></span><br class="hidden-xs">Career</a>
+            </li>
+            <li id="phone" class="hidden-xs">
+              <a href="tel:65-9178-8367">
+                <span>+65-9178-8367</span>
+                <div>Call Us</div></a>
+            </li>
+          </ul>
+        </div> <!-- COLLAPSIBLE NAV BAR OBJECT -->
+
+      </div>
+    </nav>
+  </header>
+
+
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,90 @@
+body { /** GENERIC STYLING OF TEXT **/
+    font-size: 16px;
+    color: #fff;
+    background-color: #61122f;
+    font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+    background-color: #ffffff;
+    border-radius: 0;
+    border: 0;
+}
+
+/** NAVBAR STYLING **/
+.navbar-brand {
+    padding-top: 25px;
+}
+
+.navbar-brand h1 {
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    text-transform: uppercase;
+    font-size: 150%;
+    color: #61122f;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus{
+    text-decoration: none;
+}
+
+.navbar-brand p {
+    color: chocolate;
+    text-transform: uppercase;
+    font-size: 80%;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.navbar-brand p span {
+    vertical-align: middle;
+    margin-bottom: 25px;
+}
+
+#logo-img { /** NAVBAR LOGO **/
+    background: url('../images/logo.png') no-repeat;
+    width: 150px;
+    height : 150px;
+    margin: 10px 15px 10px 0;
+}
+
+/** NAVBAR ICONS STYLING **/
+#nav-list{
+    margin-top: 10px;
+}
+
+#nav-list a {
+    text-align: center;
+    color: black;
+}
+
+#nav-list a:hover{
+    background: darkgrey;
+    opacity: 0.5;
+}
+
+#nav-list a span{
+    font-size: 180%;
+}
+
+#phone{
+    margin: 5px;
+}
+
+#phone a {
+    text-align: center;
+    font-size: 80%;
+}
+
+
+
+/** NAVBAR BUTTON STYLING **/
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+    border: 1px solid black;
+}
+
+.navbar-header button.navbar-toggle{
+    clear: both;
+    margin-bottom: 25px;
+}
