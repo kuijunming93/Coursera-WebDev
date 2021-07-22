@@ -100,10 +100,22 @@ body { /** GENERIC STYLING OF TEXT **/
 }
 
 @media (max-width: 767px) {
-    .navbar-brand h1 {
-        font-size: 160%;
+    .navbar-brand {
+        padding-top: 10px;
+        height: 80px;
     }
-    
+    .navbar-brand h1 { 
+        padding-top: 10px;
+        font-size: 10vw;
+    }
+    .navbar-brand p { 
+        padding-top: 10px;
+        font-size: 60%;
+        margin-top: 12px;
+    }
+    .navbar-brand p img{ 
+        height: 20px;
+    }    
     #collapsable-nav a {
         font-size: 120%;
     }
@@ -113,13 +125,6 @@ body { /** GENERIC STYLING OF TEXT **/
         margin-right: 7px;
     }
 }
-
-@media (max-width: 400px) { /** THERE IS AN ISSUE WITH MOBILE VERSION, THE BANNER IS OVERLAPPED. THIS CODE IS NOT WORKING**/
-    .navbar-header button.navbar-toggle{
-        margin-bottom: 100px;
-    }
-}
-
 
 /** NAVBAR BUTTON STYLING **/
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar{
