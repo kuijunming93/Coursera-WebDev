@@ -77,8 +77,32 @@ body { /** GENERIC STYLING OF TEXT **/
     font-size: 80%;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+    #nav-list a {
+        margin-top: 25px;
+        font-size: 80%;
+    }
+}
 
+@media (min-width: 992px) and (max-width: 1199px) {
+    #nav-list a {
+        font-size: 80%;
+    }
+    .navbar-brand h1 {
+        font-size: 140%;
+    }
+    .navbar-brand p {
+        font-size: 60%;
+    }
+    #phone a {
+        font-size: 80%;
+    }
+}
 
+@media (max-width: 767px) {
+    .navbar-brand h1 {
+        font-size: 160%;
+}
 /** NAVBAR BUTTON STYLING **/
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar{
     border: 1px solid black;
@@ -86,5 +110,14 @@ body { /** GENERIC STYLING OF TEXT **/
 
 .navbar-header button.navbar-toggle{
     clear: both;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+}
+
+#collapsable-nav a {
+    font-size: 120%;
+}
+
+#collapsable-nav a span {
+    font-size: 100%;
+    margin-right: 7px;
 }
