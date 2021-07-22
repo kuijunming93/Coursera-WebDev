@@ -77,6 +77,7 @@ body { /** GENERIC STYLING OF TEXT **/
     font-size: 80%;
 }
 
+/** SIZE STYLING **/
 @media (min-width: 768px) and (max-width: 991px) {
     #nav-list a {
         margin-top: 25px;
@@ -119,7 +120,6 @@ body { /** GENERIC STYLING OF TEXT **/
     #collapsable-nav a {
         font-size: 120%;
     }
-    
     #collapsable-nav a span {
         font-size: 100%;
         margin-right: 7px;
@@ -134,4 +134,16 @@ body { /** GENERIC STYLING OF TEXT **/
 .navbar-header button.navbar-toggle{
     clear: both;
     margin-bottom: 30px;
+}
+
+/** CALL BUTTON XS MODE STYLING **/
+#call-btn span {
+    font-size: 100%;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+#xs-deliver {
+    font-size: 80%;
+    margin-bottom: 20px;
 }
