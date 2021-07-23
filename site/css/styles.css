@@ -234,3 +234,39 @@ body { /** GENERIC STYLING OF TEXT maaroon #61122f**/
     opacity: 0.8;
 }
 
+.panel-footer{
+    padding: 35px 0 30px 0;
+    background: #242526;
+    margin-top: 15px;
+    font-size: 90%;
+}
+
+.panel-footer div.row{
+    margin-bottom: 10px;
+}
+
+#opening-hours-foot, #career-foot, #about-foot {
+    line-height: 1.5;
+}
+
+#opening-hours-foot > span, #career-foot > span, #about-foot > span{
+    font-size: 110%;
+    font-weight: bold;
+} 
+#about-foot p {
+    font-style: italic;
+}
+
+#career-foot > span > #highlight {
+    font-style: italic;
+    color:blue;
+}
+
+@media (min-width: 1200px){
+    .panel-footer{
+        font-size: 110%;
+    }
+    #opening-hours-foot > span, #career-foot > span, #about-foot > span{
+        font-size: 130%;
+    }
+}
