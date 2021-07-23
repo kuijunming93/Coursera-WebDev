@@ -241,6 +241,10 @@ body { /** GENERIC STYLING OF TEXT maaroon #61122f**/
     font-size: 90%;
 }
 
+.panel-footer .container {
+    background-color: #222;
+  } /** break fix for mobile footer color **/
+
 .panel-footer div.row{
     margin-bottom: 10px;
 }
