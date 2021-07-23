@@ -1,7 +1,7 @@
-body { /** GENERIC STYLING OF TEXT **/
+body { /** GENERIC STYLING OF TEXT maaroon #61122f**/
     font-size: 16px;
     color: #fff;
-    background-color: #61122f;
+    background-color: #80000f;
     font-family: 'Oxygen', sans-serif;
 }
 
@@ -60,8 +60,8 @@ body { /** GENERIC STYLING OF TEXT **/
 }
 
 #nav-list a:hover{
-    background: darkgrey;
-    opacity: 0.5;
+    background: gainsboro;
+    box-shadow: 0 0 10px black;
 }
 
 #nav-list a span{
@@ -146,6 +146,14 @@ body { /** GENERIC STYLING OF TEXT **/
 #call-btn{
     border: 1px solid white;
     margin: 0 15px 20px 15px; /** TOP RIGHT BTM LEFT **/
+    box-shadow: 0 0 10px darkgrey;
+    transition: transform .5s;
+}
+
+#call-btn:hover{
+    box-shadow: 0 0 10px darkgreen;
+    background: darkgreen;
+    transform: scale(1.05);
 }
 
 #call-btn span {
@@ -158,6 +166,7 @@ body { /** GENERIC STYLING OF TEXT **/
 .jumbotron{
     box-shadow: 0 0 35px black;
     border: 1px solid white;
+    margin: 0 auto 15px auto;
 }
 
 @media (min-width: 1200px){
@@ -165,7 +174,6 @@ body { /** GENERIC STYLING OF TEXT **/
         background: url('../images/mass-food-1024x682.jpg') no-repeat;
         height: 675px;
         max-width: 1024px;
-        margin-left: 50px;
     }
 }
 
@@ -174,7 +182,6 @@ body { /** GENERIC STYLING OF TEXT **/
         background: url('../images/mass-food-900x599.jpg') no-repeat;
         height: 598px;
         max-width: 900px;
-        margin-left: 40px;
     }
 }
 
@@ -183,7 +190,6 @@ body { /** GENERIC STYLING OF TEXT **/
         background: url('../images/mass-food-768x511.jpg') no-repeat;
         height: 510px;
         max-width: 768px;
-        margin-left: 35px;
     }
 }
 
@@ -193,3 +199,38 @@ body { /** GENERIC STYLING OF TEXT **/
         padding-left: 0;
     }
 }
+
+#select-menu, #select-location{
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid white;
+}
+
+#select-menu:hover, #select-location:hover{
+    box-shadow: 0 0 10px white;
+    transform: scale(1.05);
+}
+
+#select-menu{
+    background: url('../images/lunch-pic.jpg') no-repeat;
+    background-position: center;
+    transition: transform .5s;
+}
+
+#select-location{
+    transition: transform .5s;
+}
+
+#select-menu span, #select-location span{
+    position: absolute;
+    bottom: 0; right: 0; width: 100%; text-align: center; font-size: 160%; background-color: black;
+    color: white; opacity: 0.6;
+}
+
+#select-location span{
+    opacity: 0.8;
+}
+
