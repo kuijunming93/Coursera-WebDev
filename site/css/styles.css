@@ -126,6 +126,12 @@ body { /** GENERIC STYLING OF TEXT **/
     }
 }
 
+@media (min-width: 440px) and (max-width: 767px){
+    .navbar-brand h1 {
+        font-size: 6vw;
+    }
+}
+
 /** NAVBAR BUTTON STYLING **/
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar{
     border: 1px solid black;
@@ -137,13 +143,53 @@ body { /** GENERIC STYLING OF TEXT **/
 }
 
 /** CALL BUTTON XS MODE STYLING **/
+#call-btn{
+    border: 1px solid white;
+    margin: 0 15px 20px 15px; /** TOP RIGHT BTM LEFT **/
+}
+
 #call-btn span {
     font-size: 100%;
     color: #fff;
-    margin-bottom: 0;
 }
 
-#xs-deliver {
-    font-size: 80%;
-    margin-bottom: 20px;
+
+/** MAIN CONTENT STYLING **/
+.jumbotron{
+    box-shadow: 0 0 35px black;
+    border: 1px solid white;
+}
+
+@media (min-width: 1200px){
+    .jumbotron{
+        background: url('../images/mass-food-1024x682.jpg') no-repeat;
+        height: 675px;
+        max-width: 1024px;
+        margin-left: 50px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .jumbotron{
+        background: url('../images/mass-food-900x599.jpg') no-repeat;
+        height: 598px;
+        max-width: 900px;
+        margin-left: 40px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .jumbotron{
+        background: url('../images/mass-food-768x511.jpg') no-repeat;
+        height: 510px;
+        max-width: 768px;
+        margin-left: 35px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container .jumbotron{
+        padding: 0;
+        padding-left: 0;
+    }
 }
