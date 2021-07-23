@@ -209,7 +209,7 @@ body { /** GENERIC STYLING OF TEXT maaroon #61122f**/
     border: 1px solid white;
 }
 
-#select-menu:hover, #select-location:hover{
+#select-menu:hover,#select-menu:active, #select-location:hover,#select-location:active{
     box-shadow: 0 0 10px white;
     transform: scale(1.05);
 }
