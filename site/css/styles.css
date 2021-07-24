@@ -5,6 +5,12 @@ body { /** GENERIC STYLING OF TEXT maaroon #61122f**/
     font-family: 'Oxygen', sans-serif;
 }
 
+/** BACKGROUND IMAGE **/
+#header-nav {
+    background: url('../images/background-photo.jpg') repeat;
+    background-position: center;
+}
+
 /** HEADER **/
 #header-nav {
     background-color: #ffffff;
@@ -19,10 +25,10 @@ body { /** GENERIC STYLING OF TEXT maaroon #61122f**/
 
 .navbar-brand h1 {
     font-weight: bold;
-    text-shadow: 1px 1px 1px #222;
+    text-shadow: 1px 1px 1px #263238;
     text-transform: uppercase;
     font-size: 150%;
-    color: #61122f;
+    color: #37474f;
 }
 
 .navbar-brand a:hover, .navbar-brand a:focus{
@@ -30,7 +36,7 @@ body { /** GENERIC STYLING OF TEXT maaroon #61122f**/
 }
 
 .navbar-brand p {
-    color: chocolate;
+    color: #636B59;
     text-transform: uppercase;
     font-size: 80%;
     margin-top: 25px;
@@ -42,8 +48,13 @@ body { /** GENERIC STYLING OF TEXT maaroon #61122f**/
     margin-bottom: 25px;
 }
 
+.navbar-brand p img{ 
+    height: 30px;
+}   
+
 #logo-img { /** NAVBAR LOGO **/
-    background: url('../images/logo.png') no-repeat;
+    background: url('../images/burger-logo.png') no-repeat;
+    background-position: center;
     width: 150px;
     height : 150px;
     margin: 10px 15px 10px 0;
@@ -56,7 +67,7 @@ body { /** GENERIC STYLING OF TEXT maaroon #61122f**/
 
 #nav-list a {
     text-align: center;
-    color: black;
+    color: #37474f;
     transition: transform .5s;
 }
 
@@ -95,7 +106,7 @@ body { /** GENERIC STYLING OF TEXT maaroon #61122f**/
         font-size: 180%;
     }
     .navbar-brand p {
-        font-size: 80%;
+        font-size: 100%;
     }
     #phone a {
         font-size: 90%;
@@ -113,11 +124,11 @@ body { /** GENERIC STYLING OF TEXT maaroon #61122f**/
     }
     .navbar-brand p { 
         padding-top: 10px;
-        font-size: 60%;
+        font-size: 70%;
         margin-top: 12px;
     }
     .navbar-brand p img{ 
-        height: 20px;
+        height: 25px;
     }    
     #collapsable-nav a {
         font-size: 120%;
@@ -136,7 +147,7 @@ body { /** GENERIC STYLING OF TEXT maaroon #61122f**/
 
 /** NAVBAR BUTTON STYLING **/
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar{
-    border: 1px solid black;
+    border: 1px solid #37474f;
 }
 
 .navbar-header button.navbar-toggle{
