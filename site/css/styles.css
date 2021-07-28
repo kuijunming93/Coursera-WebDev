@@ -77,6 +77,10 @@ body { /** GENERIC STYLING OF TEXT maaroon #61122f**/
     transform: scale(1.05);
 }
 
+/**.active-glow span {
+    color: darkred;
+}**/
+
 #nav-list a span{
     font-size: 180%;
 }
