@@ -1,8 +1,226 @@
 .jumbotron, .footer{
-    background-color: darkred;
+    background-color: #730000;
     color: white;
 }
 
-.container .row {
-    margin: 0 5px 5px 5px;
+.navbar{
+    margin-bottom: 0;
+    background-color: darkslategrey;
+    border-color: darkslategrey;
+}
+
+.navbar-brand a, .navbar-default .navbar-nav>li>a {
+    vertical-align: auto;
+    color: white;
+}
+
+.navbar-default .navbar-nav .active a{
+    color: white;
+    font-size: 120%;
+    font-weight: bold;
+    background-color: darkslategrey;
+    vertical-align: middle;
+}
+
+.navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: white;
+    font-size: 120%;
+    font-weight: bold;
+    background-color: darkslategrey;
+}
+
+#header-nav{
+    border-radius: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+@media (max-width:767px) {
+    .navbar-header {
+      display:flex;
+    }
+    .navbar-brand {
+        order:1;
+      }
+    .navbar-toggle {
+        order:0;
+        margin-left:15px;
+        margin-right:0;
+    }
+    .navbar-nav{
+        opacity: 0.8;
+    }
+    body{
+        font-size: 16px;
+    }
+    .h1, .h2, .h3, h1, h2, h3 {
+        font-size: 4vw;
+        font-weight: bold;
+    }
+    .remove-relative{
+        margin-top: 50px;
+    }
+    .footer{
+        text-align: center;
+    }
+    .jumbotron p {
+        font-size: 120%;
+    }
+  }
+
+@media (max-width:500px){
+    #food-logo2.reduce-size{
+        height: 110px;
+        width: 90px;
+    }
+}
+
+@media (max-width:1022px) {
+
+}
+
+.remove-relative{
+    position: static;
+}
+
+.footer{
+    margin: 0 auto 0 auto;
+    padding-top: 20px;
+}
+
+.footer a{
+    color: lightgrey;
+}
+
+.footer .text-center{
+    padding-top: 30px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: dimgray;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    opacity: 0.95;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    color: darkslategrey;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    margin: 10px 0 5px 0;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.mainContent{
+    background-color: #2E4D58;
+    color: white;
+}
+
+header.jumbotron{
+    margin-bottom: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.breadcrumb {
+    margin-top: 20px;
+    background-color: #c1c1c1;
+}
+
+.breadcrumb>.active, .breadcrumb a, .breadcrumb>li+li:before {
+    color: black;
+    font-weight: bold;
+}
+ /**not working**/
+#jumbo-logo{
+    background: url('../img/dinner-pic.jpg') no-repeat;
+    background-position: center;
+    height: 300px;
+    margin-top: 20px;
+}
+
+ /**not working**/
+.mainContent .col-xs-3 h3{
+    margin: auto 0 auto 0;
+    height: 100px; width: 100%;
+}
+
+#food-logo1{
+    background: url('../img/uthappizza.png') no-repeat;
+}
+
+#food-logo2{
+    background: url('../img/buffet.png') no-repeat;
+}
+
+#food-logo1, #food-logo2{
+    background-position: center;
+    border: 2px solid black;
+    height: 130px; width: 130px;
+    margin: 10px 10px 10px 10px;
+    transition: transform 0.5s, filter 0.3s ease-in-out;  transform-origin: center center;  filter: brightness(100%);
+}
+
+
+ /**new**/
+ .row-header{
+    margin:0px auto;
+    padding:0px;
+}
+
+.row-content {
+    margin:0px auto;
+}
+
+.footer{
+    margin:0px auto;
+}
+
+#section-1, #section-2, #section-3, #section-4{
+    margin: 0 auto 0 auto;
+}
+
+.badge {
+    background-color: brown;
+}
+
+#badge-new.badge{
+    background-color: green;
+    border-radius: 5px;
+}
+
+.badge-secondary{
+    background-color: orange;
+    border-radius: 5px;
+}
+
+#chef-photo{
+    background: url('../img/pork-steak.jpg') no-repeat;
+    background-position: center;
+    border: 2px solid black;
+    height: 130px; max-width: 300px;
+    margin: 10px auto 10px auto;
+    transition: transform 0.5s, filter 0.3s ease-in-out;  transform-origin: center center;  filter: brightness(100%);
+}
+#chef-photo span{
+    position: absolute;
+    padding: 5px 0 5px 0;
+    bottom: 20px; right: 0; width: 100%; text-align: center; background-color: black;
+    color: white; opacity: 0.8;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/**HOVER ARTS**/
+#chef-photo:hover, #food-logo1:hover, #food-logo2:hover{
+    filter: brightness(120%);  transform: scale(1.05);
 }
