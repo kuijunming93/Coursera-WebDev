@@ -6,7 +6,7 @@
 #myCarousel .carousel-item{
     height: 32rem; /**1rem = 16px**/
     background: black;
-    background: url('../img/cinema-banner.jpg') no-repeat;
+    background: url('../img/cinema-banner.jpg');
     background-position: center;
     color: white;
     position: relative;
@@ -37,6 +37,14 @@
 
 .swiper-slide .btn:hover{
     filter: brightness(120%);  transform: scale(1.05);
+}
+/**MODAL STYPLING**/
+.modal-content{
+    background: #18191A;
+    background-position: center;
+}
+.modal-content, .btn-close{
+    color: white;
 }
 
 /**GENERAL STYLING**/
