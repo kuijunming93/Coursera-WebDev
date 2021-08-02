@@ -96,7 +96,7 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
             </button>
-      </div><!--END OF CAROUSEL 1
+      </div><!--END OF CAROUSEL 1-->
 
       <!-- SWIPERJS CONTAINER -->
       <div id="myCarousel-2" class="swiper-container mySwiper">
@@ -129,7 +129,7 @@
             </div>
             <div class="modal-body">
               <div class= "embed-responsive embed-responsive-16by9 d-flex justify-content-center">
-                <iframe class="embed-responsive-item" width="900" height="600" src="https://www.youtube.com/embed/-FmWuCgJmxo" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="vid-player1" class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/MtN1YnoL46Q?start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="modal-footer d-flex mt-5">
             </div>
@@ -139,7 +139,6 @@
 
       <!--TO DOWNLOAD OTHER PACKAGES/LIBRARIES-->
       <script src="js/jquery-3.6.0.min.js"></script>
-      <script src="js/script.js"></script>
       
       <!-- SRC JS FILES FOR BS5/POOPER -->
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
@@ -180,6 +179,20 @@
         },
       });
       </script>
+
+      <script src="js/script.js"></script>
+      <!--RESET VIDEO ON MODAL WHEN CLOSED-->
+      <script>
+        $(document).ready(function() {
+            var url = $("#vid-player1").attr('src');
+            $("#myModal").on('hide.bs.modal', function() {
+                $("#vid-player1").attr('src', '');
+            });
+            $("#myModal").on('show.bs.modal', function() {
+                $("#vid-player1").attr('src', url);
+            });
+        });
+        </script>
   </body>
 </html>
 
