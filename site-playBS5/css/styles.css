@@ -1,5 +1,90 @@
-#myCon.container{
-    background-color: blue;
-    height: 300px;
+.navbar-brand a{
+    text-decoration: none;
+    color: #fff;
 }
 
+#myCarousel .carousel-item{
+    height: 32rem; /**1rem = 16px**/
+    background: black;
+    background: url('../img/cinema-banner.jpg') no-repeat;
+    background-position: center;
+    color: white;
+    position: relative;
+}
+/**SECOND CAROUSEL STYLING**/
+.swiper-container{
+    height: 15rem; /**1rem = 16px**/
+    background: black;
+    color: white;
+    position: relative;
+}
+
+.swiper-slide{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.swiper-container .swiper-scrollbar-drag {
+    background: #fff;
+}
+
+.swiper-slide .btn{
+    padding: 0;
+    border: none;
+    max-width: 400px;
+    transition: transform 0.5s, filter 0.3s ease-in-out;  transform-origin: center center;  filter: brightness(100%);
+}
+
+.swiper-slide .btn:hover{
+    filter: brightness(120%);  transform: scale(1.05);
+}
+
+/**GENERAL STYLING**/
+.container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 50px;
+}
+
+#movies-feature .img-fluid{
+    height: auto;
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto 10px auto;
+    transition: transform 0.5s, filter 0.3s ease-in-out;  transform-origin: center center;  filter: brightness(100%);
+}
+
+#movies-feature .col-2{
+    margin: 0 auto 10px auto;
+    padding: 0;
+}
+
+#movies-feature .img-fluid:hover, #movies-feature .img-fluid:active{
+    filter: brightness(120%);  transform: scale(1.05);
+}
+
+@media(min-width:480px) and (max-width:992px){
+    #myCarousel .carousel-item{
+        height: 24rem; /**1rem = 16px**/
+    }
+}
+
+@media(max-width:480px){
+    #myCarousel .carousel-item{
+        height: 18rem; /**1rem = 16px**/
+    }
+    /**CAROUSEL 2 MOBILE VIEW SIZING**/
+    .swiper-slide .btn{
+        max-width: 300px;
+    }
+    .swiper-container{
+        height: 10rem;
+    }
+}
+
+#cinema-banner.container{
+    
+    color: gold;
+}
