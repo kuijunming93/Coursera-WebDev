@@ -59,14 +59,14 @@
                 <div id="cinema-banner" class="container d-flex flex-column align-items-center">
                     <h1>GRANDFLIX</h1>
                     <p>THE FAVOURITE ONE-STOP FIX FOR YOUR STREAMING NEEDS</p>
-                    <a href="#" class="btn btn-md btn-primary">Subscribe!</a>
+                    <a href="#" class="btn btn-sm btn-primary">Subscribe!</a>
                 </div><!--SLIDER ITEM 1-->
             </div>
             <div class="carousel-item" data-bs-interval="3000">
                   <div class="container d-flex flex-column align-items-center">
                       <h1>EXAMPLE HEADLINE 2</h1>
                       <p>Hello world!</p>
-                      <a href="#" class="btn btn-md btn-primary">Join!</a>
+                      <a href="#" class="btn btn-sm btn-primary">Join!</a>
                   </div><!--SLIDER ITEM 2-->
               </div>
             <div class="carousel-item" data-bs-interval="5000">
@@ -74,7 +74,7 @@
                     <div class="row">
                         <div class="col-auto"><h2>BLOCKBUSTERS</h2></div><hr>
                     </div>
-                    <div id="movies-feature" class="row">
+                    <div id="movies-feature" class="row"> <!--CAN STYLE HERE TO RESTRICT THE PORTION BY HEIGHT-->
                         <div class="col-2"><img src="./img/blackwidow-movie.jpg" class="img-fluid" alt="..."></div>
                         <div class="col-2"><img src="./img/iceroad-movie.jpg" class="img-fluid" alt="..."></div>
                         <div class="col-2"><img src="./img/kingdom-movie.jpg" class="img-fluid" alt="..."></div>
@@ -83,7 +83,7 @@
                         <div class="col-2"><img src="./img/super-movie.jpg" class="img-fluid" alt="..."></div>
                     </div>
                     <div class="row">
-                        <div class="d-flex justify-content-center"><a href="#" class="btn btn-md btn-primary">Subscribe and Watch Now!</a></div>
+                        <div class="d-flex justify-content-center"><a href="#" class="btn btn-sm btn-primary">Subscribe and Watch Now!</a></div>
                     </div>
                     
                 </div><!--SLIDER ITEM 3-->
@@ -98,7 +98,7 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
             </button>
-            <button class="btn btn-dark btn-md" id="carouselButton">
+            <button class="btn btn-dark btn-sm" id="carouselButton">
               <span id="carousel-button-icon" class="fa fa-pause"></span></button>
       </div><!--END OF CAROUSEL 1-->
 
@@ -131,23 +131,79 @@
         <div class="swiper-slide">
           
           <div class="container">
-            <div class="row-content d-flex flex-column align-items-start" style="color: gold; font-weight: bold;">
+            <div class="row-content d-flex flex-column align-items-start">
               <div class="col-2"></div>
-              <div class="col-10">
-                <div data-swiper-parallax="-300"><h1>STREAM AND INDULGE</h1></div>
-                <div data-swiper-parallax="-200"><h2>Savour in every bites with your favourite on-demand movies..</h2></div>
+              <div class="col-10 carousel-3-title">
+                <div data-swiper-parallax="-300">STREAM AND INDULGE</div>
+                <div data-swiper-parallax="-200" style="font-style: italic;"><span>"Savour in every bites with your favourite on-demand movies.."</span></div>
               </div>
             </div>
           </div>
           
         </div>
+        <!--FOOD MENU-->
         <div class="swiper-slide">
           <div class="container d-flex flex-column align-items-center">
             <div class="row">
-
+              <div class="col-6 col-sm-4">
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button>placeholder</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4">
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button>placeholder</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4">
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button>placeholder</button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="title" data-swiper-parallax="-300">Slide 2</div>
-            <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+            <!--START OF 2ND ROW-->
+            <div class="row mt-5">
+              <div class="col-6 col-sm-4">
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button>placeholder</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4">
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button>placeholder</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4">
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button>placeholder</button>
+                  </div>
+                </div>
+              </div>
+            </div><!--END OF ROW 2-->
+            </div>
           </div>
         </div>
         <div class="swiper-slide d-flex flex-column align-items-center">
@@ -160,7 +216,7 @@
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-pagination swiper-pagination2"></div>
-    </div><!--END OF SWIPER 2-->
+    </div><!--END OF SWIPER 2/CAROUSEL 3-->
 
       <!-- Modals -->
       <div class="modal fade" id="myModal" tabindex="-1">
@@ -278,5 +334,8 @@
   2. Add swiperjs parallex for food - find food photos
   3. Modal for food selection
   4. video modal sizing
-  5. part of carousel 3 image get cropped out
+  5. Carou1 Blockbuster text get overlay, can restrict height for container and use CSS to style responsively
+  6. Add card for food menu in carou3
+  7. About tabbed card in carou3
+  8. when clicked on nav bar section, jquery to switch to relevant page and <a href tag>
 -->

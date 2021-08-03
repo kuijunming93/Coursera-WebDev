@@ -91,8 +91,18 @@ body{
     border-radius: 10px;
 }
 
-.swiper-slide .title span, .swiper-slide .subtitle span{
+.carousel-3-title{
+    background-color: black; 
+    color: white; font-weight: bold;
+    display: inline;
+    padding: 0.5rem;
+    opacity: 0.8;
+    border-radius: 5px;
+    font-size: 38px;
+}
 
+.carousel-3-title span{
+    font-size: 28px;
 }
 
 .swiper-slide .text {
@@ -129,7 +139,7 @@ body{
     height: auto;
     max-width: 100%;
     padding: 0;
-    margin: 0 auto 10px auto;
+    margin: 0 auto 5px auto;
     transition: transform 0.5s, filter 0.3s ease-in-out;  transform-origin: center center;  filter: brightness(100%);
 }
 
@@ -146,6 +156,12 @@ body{
     #myCarousel .carousel-item{
         height: 24rem; /**1rem = 16px**/
     }
+    .carousel-3-title{
+        font-size: 32px;
+    }
+    .carousel-3-title span{
+        font-size: 20px;
+    }
 }
 
 @media(max-width:480px){
@@ -159,6 +175,27 @@ body{
     .swiper-container{
         height: 10rem;
     }
+    /**CAROUSEL 3 MOBILE VIEW SIZING**/
+    #myCarousel-3.swiper-container{
+        height: 16rem;
+    }
+    .swiper-slide .title{
+        font-size: 110%;
+    }
+    .swiper-slide .subtitle{
+        font-size: 80%;
+    }
+    .btn-warning h3{
+        font-size: 70%;
+        margin: 0;padding: 0;
+    }
+    .carousel-3-title{
+        font-size: 22px;
+    }
+    .carousel-3-title span{
+        font-size: 12px;
+    }
+
 }
 
 #cinema-banner.container{
