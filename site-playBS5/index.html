@@ -15,7 +15,7 @@
   </head>
 
   <body>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
           <div class="container-fluid">
               <div class="navbar-brand">
                 <a href="./index.html"><img img src="./img/brand-logo.png" class="img-fluid" alt="Brand-Logo" style="max-width:50px;"> GrandFlix</a>
@@ -24,7 +24,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button> <!--TOGGLER OBJECT-->
             <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav me-auto">
                   <li class="nav-item">
                     <a class="nav-link active" href="./index.html"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a>
                   </li>
@@ -37,10 +37,9 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#"><i class="fa fa-user-circle" aria-hidden="true"></i> About Us</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Our Franchise</a>
-                  </li>
                 </ul>
+                <a href="https://kuijunming93.github.io/myWebpage/site/" target="_blank" class= "navbar-text" style="text-decoration: none;">Our Franchise <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
+                
               </div><!--NAVBAR CONTENTS-->
             </div><!--NAVBAR CONTAINER CLOSURE-->
       </nav><!--NAV BAR SECTION-->
@@ -53,21 +52,21 @@
           </div> <!--SLIDING-->
 
           <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div id="cinema-banner" class="container">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <div id="cinema-banner" class="container d-flex flex-column align-items-center">
                     <h1>iCinema</h1>
                     <p>INDULGE IN THE GOLD CLASS EXPERIENCE</p>
-                    <a href="#" class="btn btn-lg btn-primary">Subscribe!</a>
+                    <a href="#" class="btn btn-md btn-primary">Subscribe!</a>
                 </div><!--SLIDER ITEM 1-->
             </div>
-            <div class="carousel-item">
-                  <div class="container">
+            <div class="carousel-item" data-bs-interval="3000">
+                  <div class="container d-flex flex-column align-items-center">
                       <h1>EXAMPLE HEADLINE 2</h1>
                       <p>Hello world!</p>
-                      <a href="#" class="btn btn-lg btn-primary">Join!</a>
+                      <a href="#" class="btn btn-md btn-primary">Join!</a>
                   </div><!--SLIDER ITEM 2-->
               </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="5000">
                 <div class="container">
                     <div class="row">
                         <div class="col-auto"><h2>BLOCKBUSTERS</h2></div><hr>
@@ -125,7 +124,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h3 class="modal-title">GrandFlix Live Streaming</h3>
-              <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><h4>Close</h4></button>
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><h5>Close</h5></button>
             </div>
             <div class="modal-body">
               <div class= "embed-responsive embed-responsive-16by9 d-flex justify-content-center">
@@ -202,5 +201,7 @@
 <!--
   BUGS TO FIX
   1. DO RESIZING FOR CAROUSEL 2
-  2. video still playing when modal is closed
+  2. Add swiperjs parallex for food - find food photos
+  3. Modal for food selection
+  4. video modal sizing
 -->

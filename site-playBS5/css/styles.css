@@ -36,14 +36,14 @@
 }
 
 .swiper-slide .btn:hover{
-    filter: brightness(120%);  transform: scale(1.05);
+    filter: brightness(120%);  transform: scale(1.01);
 }
 /**MODAL STYPLING**/
 .modal-content{
     background: #18191A;
     background-position: center;
 }
-.modal-content, .btn-close{
+.modal-content{
     color: white;
 }
 
@@ -94,5 +94,5 @@
 
 #cinema-banner.container{
     
-    color: gold;
+    color: white;
 }
