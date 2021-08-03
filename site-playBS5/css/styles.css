@@ -1,3 +1,7 @@
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
 .navbar-brand a{
     text-decoration: none;
     color: #fff;
@@ -6,10 +10,19 @@
 #myCarousel .carousel-item{
     height: 32rem; /**1rem = 16px**/
     background: black;
-    background: url('../img/cinema-banner.jpg');
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url('../img/cinema-banner.jpg');
     background-position: center;
     color: white;
     position: relative;
+}
+#carouselButton {
+    right:5px;
+    position: absolute;
+    bottom: 5px;
+    z-index: 1;
 }
 /**SECOND CAROUSEL STYLING**/
 .swiper-container{
@@ -28,7 +41,7 @@
     background: #fff;
 }
 
-.swiper-slide .btn{
+.swiper-slide .btn-dark{
     padding: 0;
     border: none;
     max-width: 400px;
@@ -38,6 +51,62 @@
 .swiper-slide .btn:hover{
     filter: brightness(120%);  transform: scale(1.01);
 }
+/**THIRD CAROUSEL STYLING**/
+#myCarousel-3.swiper-container{
+    height: 42rem; /**1rem = 16px**/
+    background: black;
+    background-position: center;
+    color: white;
+    position: relative;
+}
+.parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper-slide .title {
+    font-size: 41px;
+    font-weight: 300;
+    background-color: black;
+    color: white; 
+    display: inline;
+    padding: 0.5rem;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+.swiper-slide .subtitle {
+    font-size: 21px;
+    background-color: grey;
+    color: white; 
+    display: inline;
+    padding: 0.5rem;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+.swiper-slide .title span, .swiper-slide .subtitle span{
+
+}
+
+.swiper-slide .text {
+    font-size: 14px;
+    max-width: 400px;
+    line-height: 1.3;
+}
+
+.btn-warning {
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
 /**MODAL STYPLING**/
 .modal-content{
     background: #18191A;
