@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!--browser-sync start --server --directory --files "*" -->
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,13 +33,13 @@
                     <a class="nav-link active" href="./index.html"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa fa-film" aria-hidden="true"></i> Film & Series</a>
+                    <a class="nav-link" href="#anchor-film"><i class="fa fa-film" aria-hidden="true"></i> Film & Series</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa fa-cutlery" aria-hidden="true"></i> Dining</a>
+                    <a id="mySwiper2" class="nav-link gotoSlide1" href="#anchor-meal"><i class="fa fa-cutlery" aria-hidden="true"></i> Dining</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa fa-user-circle" aria-hidden="true"></i> About Us</a>
+                    <a class="nav-link" href="#anchor-footer"><i class="fa fa-user-circle" aria-hidden="true"></i> About</a>
                   </li>
                 </ul>
                 <div><a href="https://kuijunming93.github.io/myWebpage/site/" target="_blank" class= "nav-item" style="text-decoration: none; color: lightblue;"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Our Franchise</a></div>
@@ -55,10 +56,10 @@
           </div> <!--SLIDING-->
 
           <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3000">
+            <div class="carousel-item active" data-bs-interval="4000">
                 <div id="cinema-banner" class="container d-flex flex-column align-items-center">
                   <img id="brandlogo-banner" src="./img/brand-logo.png" class="img-fluid mb-2" alt="Brand Logo">
-                    <h1>GRANDFLIX</h1>
+                    <div class="neonText-white"><h1>GRANDFLIX</h1></div>
                     <p>THE FAVOURITE ONE-STOP FIX FOR YOUR STREAMING NEEDS</p>
                 </div><!--SLIDER ITEM 1-->
             </div>
@@ -72,7 +73,7 @@
             <div class="carousel-item" data-bs-interval="5000">
                 <div class="container">
                     <div class="row">
-                        <div class="col-auto"><h2>BLOCKBUSTERS</h2></div><hr>
+                        <div class="col-auto"><h2>ON-DEMAND MOVIES</h2></div><hr>
                     </div>
                     <div id="movies-feature" class="row"> <!--CAN STYLE HERE TO RESTRICT THE PORTION BY HEIGHT-->
                         <div class="col-2"><img src="./img/blackwidow-movie.jpg" class="img-fluid" alt="..."></div>
@@ -89,7 +90,7 @@
                 </div><!--SLIDER ITEM 3-->
             </div>
             </div><!--INNER CONTENT FOR CAROUSEL-->
-            
+
             <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -104,6 +105,7 @@
 
       <!-- SWIPERJS CONTAINER 1 -->
       <div id="myCarousel-2" class="swiper-container mySwiper">
+        <a id="anchor-film"></a>
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
@@ -124,14 +126,14 @@
       </div><!--END OF SWIPER 1-->
 
       <!--SWIPERJS CONTAINER 2-->
-      <div id="myCarousel-3" class="swiper-container mySwiper2">
+      <div id="myCarousel-3" class="swiper-container mySwiper2"><a id="anchor-meal"></a>
       <div class="parallax-bg" style="background-image: url(./img/venom-bg.jpg);"
         data-swiper-parallax="-23%"></div>
       <div class="swiper-wrapper">
         <div class="swiper-slide d-flex flex-column align-items-center">
           <div class="title mb-1" data-swiper-parallax="-300">STREAM AND INDULGE</div>
           <div class="title mb-3" data-swiper-parallax="-300" style="text-align: center; font-style: italic;">"Savour in every bites with on-demand videos.."</div>
-          <div class="subtitle" data-swiper-parallax="-200" style="text-align: center; font-style: italic;">>>> Swipe right for food menu >>></div>
+          <div class="subtitle" data-swiper-parallax="-200" style="text-align: center; font-style: italic;">>>> Swipe right for FOOD MENU >>></div>
         </div>
         <!--FOOD MENU-->
         <div class="swiper-slide">
@@ -141,9 +143,8 @@
                 <div class="card">
                   <img src="./img/fd-popcorn.jpg" class="card-img-top img-fluid" alt="Popocorns">
                   <div class="card-body">
-                    <div class="card-title">Popcorn and Friends
-                      <button type="button" data-bs-toggle="modal" data-bs-target="#foodModal" class="btn btn-sm btn-success pull-right">Add</button></div>
-                    <p class="card-text">S$8.99</p>
+                    <div class="card-title">Popcorn and Friends</div>
+                    <p class="card-text">S$8.99<button type="button" data-bs-toggle="modal" data-bs-target="#foodModal" class="btn btn-sm btn-success pull-right">Add</button></p>
                   </div>
                 </div>
               </div>
@@ -151,9 +152,8 @@
                 <div class="card">
                   <img src="./img/fd-chicnugg.jpg" class="card-img-top img-fluid" alt="Chicken Nuggets">
                   <div class="card-body">
-                    <div class="card-title">Box of Chicken Nuggets
-                      <button type="button" data-bs-toggle="modal" data-bs-target="#foodModal" class="btn btn-sm btn-success pull-right">Add</button></div>
-                    <p class="card-text">S$3.99</p>
+                    <div class="card-title">Box of Chicken Nuggets</div>
+                    <p class="card-text">S$3.99<button type="button" data-bs-toggle="modal" data-bs-target="#foodModal" class="btn btn-sm btn-success pull-right">Add</button></p>
                   </div>
                 </div>
               </div>
@@ -162,8 +162,8 @@
                   <img src="./img/fd-mashedpotato.jpg" class="card-img-top img-fluid" alt="Mashed Potato">
                   <div class="card-body">
                     <div class="card-title">Cup of Mashed Potato
-                      <button type="button" data-bs-toggle="modal" data-bs-target="#foodModal" class="btn btn-sm btn-success pull-right">Add</button></div>
-                    <p class="card-text">S$1.99</p>
+                      </div>
+                    <p class="card-text">S$1.99<button type="button" data-bs-toggle="modal" data-bs-target="#foodModal" class="btn btn-sm btn-success pull-right">Add</button></p>
                   </div>
                 </div>
               </div><!--TECHNICALLY ROW 2 ON MD/LG SCREEN-->
@@ -171,29 +171,29 @@
                 <div class="card">
                   <img src="./img/fd-wedges.jpg" class="card-img-top img-fluid" alt="Potato Wedges">
                   <div class="card-body">
-                    <div class="card-title">Plentiful of Potato Wedges
-                      <button type="button" data-bs-toggle="modal" data-bs-target="#foodModal" class="btn btn-sm btn-success pull-right">Add</button></div>
-                    <p class="card-text">S$4.99</p>
+                    <div class="card-title">Plenty of Potato Wedges
+                      </div>
+                    <p class="card-text">S$4.99<button type="button" data-bs-toggle="modal" data-bs-target="#foodModal" class="btn btn-sm btn-success pull-right">Add</button></p>
                   </div>
                 </div>
               </div>
               <div class="col-6 col-sm-4 col-md-4 col-xl-4">
                 <div class="card">
-                  <img src="./img/fd-chicnugg.jpg" class="card-img-top img-fluid" alt="Chicken Nuggets">
+                  <img src="./img/fd-juice.jpg" class="card-img-top img-fluid" alt="Cranberry Juice">
                   <div class="card-body">
-                    <div class="card-title">Box of Chicken Nuggets
-                      <button type="button" data-bs-toggle="modal" data-bs-target="#foodModal" class="btn btn-sm btn-success pull-right">Add</button></div>
-                    <p class="card-text">S$3.99</p>
+                    <div class="card-title">Cranberry Juice
+                      </div>
+                    <p class="card-text">S$5.99<button type="button" data-bs-toggle="modal" data-bs-target="#foodModal" class="btn btn-sm btn-success pull-right">Add</button></p>
                   </div>
                 </div>
               </div>
               <div class="col-6 col-sm-4 col-md-4 col-xl-4">
                 <div class="card">
-                  <img src="./img/fd-chicnugg.jpg" class="card-img-top img-fluid" alt="Chicken Nuggets">
+                  <img src="./img/fd-npslushie.jpg" class="card-img-top img-fluid" alt="Rainbow Slushie">
                   <div class="card-body">
-                    <div class="card-title">Box of Chicken Nuggets
-                      <button type="button" data-bs-toggle="modal" data-bs-target="#foodModal" class="btn btn-sm btn-success pull-right">Add</button></div>
-                    <p class="card-text">S$3.99</p>
+                    <div class="card-title">Rainbow Slushie
+                      </div>
+                    <p class="card-text">300 Neopoints<button type="button" data-bs-toggle="modal" data-bs-target="#foodModal" class="btn btn-sm btn-success pull-right">Add</button></p>
                   </div>
                 </div>
               </div>
@@ -204,14 +204,69 @@
         <div class="swiper-slide d-flex flex-column align-items-center">
           <div class="title mb-1" data-swiper-parallax="-300">LATEST BLOCKBUSTER TRAILER</div>
           <div class="title mb-3" data-swiper-parallax="-300">VENOM 2</div>
-          <div class="subtitle" data-swiper-parallax="-200">EASE OUT, CLICK AND STREAM!</div>
+          <!--<div class="subtitle" data-swiper-parallax="-200">EASE OUT, CLICK AND STREAM!</div>-->
           <button type="button" data-bs-toggle="modal" data-bs-target="#bbModal" class="btn btn-md btn-warning d-flex mt-4" data-swiper-parallax="-100"><h3><i class="fa fa-video-camera" aria-hidden="true"></i> WATCH NOW!</h3></button>
         </div>
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-pagination swiper-pagination2"></div>
-    </div></div><!--END OF SWIPER 2/CAROUSEL 3-->
+    </div><!--END OF SWIPER 2/CAROUSEL 3-->
+    
+    
+    <!--FOOTER-->
+    <footer>
+      <a id="anchor-footer"></a>
+      <div class="container d-flex justify-content-center mt-3">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#about-tab" type="button" role="tab">About</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#info-tab" type="button" role="tab">Subscribe</button>
+                  </li>
+                </ul>
+                <!--TAB CONTENTS-->
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="about-tab" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="container">
+                      <div class="row d-flex justify-content-center">
+                        <div class="col-12 mt-3 mb-2" style="width: 150px;"><img src="./img/brand-logo.png" class="img-fluid" alt="Brand Logo"></div>
+                        <div class="row">
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">GrandFlix Private Limited</li>
+                            <li class="list-group-item">Founded in 2021</li>
+                            <li class="list-group-item">A third item</li>
+                            <li class="list-group-item">A fourth item</li>
+                            <li class="list-group-item">And a fifth one</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+        
+                  </div><!--END OF TAB 1-->
+                  <div class="tab-pane fade" id="info-tab" role="tabpanel" aria-labelledby="profile-tab">
+                    <h3 class="mt-2" >Subscribe to our newsletter!</h3>
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Don't worry! Your email address will always be confidential and secured.</div>
+                      </div>
+                      <button type="submit" class="btn btn-primary pull-right">Submit</button>
+                    </form>
+                  </div><!--END OF TAB 2-->
+                </div><!--END OF TAB CONTENTS-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
       <!-- Modal (Streaming Normal) -->
       <div class="modal fade" id="myModal" tabindex="-1">
@@ -283,6 +338,7 @@
         slidesPerView: 5,
         spaceBetween: 0,
         freeMode: true,
+        simulateTouch: true,
         scrollbar: {
           el: ".swiper-scrollbar",
           hide: true,
@@ -313,6 +369,7 @@
         speed: 600,
         parallax: true,
         loop: true,
+        simulateTouch: true,
         pagination: {
           el: ".swiper-pagination2",
           clickable: true,
@@ -358,22 +415,25 @@
                     $("#carouselButton").children("span").addClass('fa-pause');                    
                 }
             });
+          $('.gotoSlide1').click(function(window){
+            console.log(this)
+            //var mySwiper2 = $(this).attr('id')
+            //console.log(mySwiper2)
+            //$mySwiper2.slideTo(2,300,true);
+            //STILL WORKING IT OUT
+          })(window);
         </script>
   </body>
 </html>
 
-<!--browser-sync start --server --directory --files "*" -->
+
 <!--https://getbootstrap.com/docs/5.0/examples/carousel/-->
 
 <!--
   BUGS TO FIX
-  1. DO RESIZING FOR CAROUSEL 2
-  2. find food photos
   4. video modal sizing
-  7. About tabbed card in carou3
   8. when clicked on nav bar section, jquery to switch to relevant page and <a href tag>
   9. Consider adding a curtain slider, add all scripts into js file + rerun node js for npm consistency
-  10. Link nav bar button to subsequent level for swiperjs
-  11. brand logo for carou1 overlay when size gets smaller, unable to apply style
+  10. Link nav bar button to subsequent level for swiperjs - requires jquery or js scripts
 
 -->
