@@ -1,5 +1,6 @@
 body{
     font-family: 'Oswald', sans-serif;
+    background-color: black;
 }
 
 .navbar-brand a{
@@ -91,20 +92,6 @@ body{
     border-radius: 10px;
 }
 
-.carousel-3-title{
-    background-color: black; 
-    color: white; font-weight: bold;
-    display: inline;
-    padding: 0.5rem;
-    opacity: 0.8;
-    border-radius: 5px;
-    font-size: 38px;
-}
-
-.carousel-3-title span{
-    font-size: 28px;
-}
-
 .swiper-slide .text {
     font-size: 14px;
     max-width: 400px;
@@ -115,6 +102,23 @@ body{
     color: black;
     border: 2px solid black;
     border-radius: 10px;
+}
+
+/**3RD CAROUSEL FOOD MENU SIZING**/
+#food-menu .card{
+    max-height: 250px;
+    max-width: 250px;
+    margin: 0 auto 10px auto;
+    background-color: white;
+    color: black;
+}
+
+#food-menu .card-body{
+    padding: 10px;
+}
+
+#food-menu .card-title {
+    font-weight: bold;
 }
 
 /**MODAL STYPLING**/
@@ -156,11 +160,18 @@ body{
     #myCarousel .carousel-item{
         height: 24rem; /**1rem = 16px**/
     }
-    .carousel-3-title{
-        font-size: 32px;
+    #food-menu .card{
+        max-height: 200px;
+        max-width: 200px;
+        font-size: 90%;
     }
-    .carousel-3-title span{
-        font-size: 20px;
+    #food-menu .card-body{
+        padding: 10px;
+    }
+    #food-menu .btn-success{
+        font-size: 90%;
+        padding: 4px;
+        margin: 0;
     }
 }
 
@@ -177,7 +188,7 @@ body{
     }
     /**CAROUSEL 3 MOBILE VIEW SIZING**/
     #myCarousel-3.swiper-container{
-        height: 16rem;
+        height: 36rem;
     }
     .swiper-slide .title{
         font-size: 110%;
@@ -189,14 +200,63 @@ body{
         font-size: 70%;
         margin: 0;padding: 0;
     }
-    .carousel-3-title{
-        font-size: 22px;
+    #food-menu .card{
+        max-height: 150px;
+        max-width: 150px;
+        margin: 0 auto 5px auto;
+        font-size: 3vw;
     }
-    .carousel-3-title span{
-        font-size: 12px;
+    #food-menu .card-body{
+        padding: 5px;
+    }
+    #food-menu .btn-success{
+        font-size: 3vw;
+        padding: 4px;
+        margin: 0;
+    }
+    #food-menu .card-title {
+        margin: 0;
     }
 
 }
+@media(min-width:400px) and (max-width:480px){
+    #food-menu .card{
+        font-size: 12px;
+    }
+    #food-menu .btn-success{
+        font-size: 10px;
+    }
+}
+
+@media(min-width:1400px){
+    #food-menu .card{
+        max-height: 300px;
+        max-width: 300px;
+    }
+}
+
+@media(min-width:768px) and (max-width:992px){
+    /**MED TO LG STYLING**/
+    #brandlogo-banner.img-fluid{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media(min-width:992) and (max-width:1200){
+    /**LG TO XL STYLING**/
+    #brandlogo-banner.img-fluid{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media(min-width:1200px){
+    #myCarousel .carousel-item{
+        height: 36rem;
+    }
+}
+
 
 #cinema-banner.container{
     

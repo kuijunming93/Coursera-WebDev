@@ -21,7 +21,7 @@
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
           <div class="container-fluid">
               <div class="navbar-brand">
-                <a href="./index.html"><img img src="./img/brand-logo.png" class="img-fluid" alt="Brand-Logo" style="max-width:50px;"> GrandFlix</a>
+                <a href="./index.html"><img src="./img/brand-logo.png" class="img-fluid" alt="Brand-Logo" style="max-width:50px;"> GrandFlix</a>
               </div> <!--NAVBAR HEADER AND TITLE-->
               <button id="myNavTogglebtn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -57,7 +57,8 @@
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="3000">
                 <div id="cinema-banner" class="container d-flex flex-column align-items-center">
-                    <h1>GRANDFLIX</h1>
+                  <img id="brandlogo-banner" src="./img/brand-logo.png" class="img-fluid" alt="Brand Logo">
+                    <h1><br>GRANDFLIX</h1>
                     <p>THE FAVOURITE ONE-STOP FIX FOR YOUR STREAMING NEEDS</p>
                     <a href="#" class="btn btn-sm btn-primary">Subscribe!</a>
                 </div><!--SLIDER ITEM 1-->
@@ -82,9 +83,9 @@
                         <div class="col-2"><img src="./img/profile-movie.jpg" class="img-fluid" alt="..."></div>
                         <div class="col-2"><img src="./img/super-movie.jpg" class="img-fluid" alt="..."></div>
                     </div>
-                    <div class="row">
+                    <!--<div class="row">
                         <div class="d-flex justify-content-center"><a href="#" class="btn btn-sm btn-primary">Subscribe and Watch Now!</a></div>
-                    </div>
+                    </div>-->
                     
                 </div><!--SLIDER ITEM 3-->
             </div>
@@ -128,97 +129,92 @@
       <div class="parallax-bg" style="background-image: url(./img/venom-bg.jpg);"
         data-swiper-parallax="-23%"></div>
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          
-          <div class="container">
-            <div class="row-content d-flex flex-column align-items-start">
-              <div class="col-2"></div>
-              <div class="col-10 carousel-3-title">
-                <div data-swiper-parallax="-300">STREAM AND INDULGE</div>
-                <div data-swiper-parallax="-200" style="font-style: italic;"><span>"Savour in every bites with your favourite on-demand movies.."</span></div>
-              </div>
-            </div>
-          </div>
-          
+        <div class="swiper-slide d-flex flex-column align-items-center">
+          <div class="title mb-1" data-swiper-parallax="-300">STREAM AND INDULGE</div>
+          <div class="title mb-3" data-swiper-parallax="-300" style="text-align: center; font-style: italic;">"Savour in every bites with on-demand videos.."</div>
+          <div class="subtitle" data-swiper-parallax="-200" style="text-align: center; font-style: italic;">>>> Swipe right for food menu >>></div>
         </div>
         <!--FOOD MENU-->
         <div class="swiper-slide">
-          <div class="container d-flex flex-column align-items-center">
-            <div class="row">
-              <div class="col-6 col-sm-4">
+          <div class="container d-flex flex-column justify-content-evenly">
+            <div id="food-menu" class="row"><!--INTRODUCED 1 ROW FOR RESIZEABILITY-->
+              <div class="col-6 col-sm-4 col-md-4 col-xl-4">
                 <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
+                  <img src="./img/fd-popcorn.jpg" class="card-img-top img-fluid" alt="Popocorns">
                   <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button>placeholder</button>
+                    <div class="card-title">Popcorn and Friends
+                      <button type="button" data-bs-toggle="modal" data-bs-target="#foodModal" class="btn btn-sm btn-success pull-right">Add</button></div>
+                    <p class="card-text">S$8.99</p>
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-sm-4">
+              <div class="col-6 col-sm-4 col-md-4 col-xl-4">
                 <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
+                  <img src="./img/fd-chicnugg.jpg" class="card-img-top img-fluid" alt="Chicken Nuggets">
                   <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button>placeholder</button>
+                    <div class="card-title">Box of Chicken Nuggets
+                      <button type="button" data-bs-toggle="modal" data-bs-target="#foodModal" class="btn btn-sm btn-success pull-right">Add</button></div>
+                    <p class="card-text">S$3.99</p>
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-sm-4">
+              <div class="col-6 col-sm-4 col-md-4 col-xl-4">
                 <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
+                  <img src="./img/fd-mashedpotato.jpg" class="card-img-top img-fluid" alt="Mashed Potato">
                   <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button>placeholder</button>
+                    <div class="card-title">Cup of Mashed Potato
+                      <button type="button" data-bs-toggle="modal" data-bs-target="#foodModal" class="btn btn-sm btn-success pull-right">Add</button></div>
+                    <p class="card-text">S$1.99</p>
+                  </div>
+                </div>
+              </div><!--TECHNICALLY ROW 2 ON MD/LG SCREEN-->
+              <div class="col-6 col-sm-4 col-md-4 col-xl-4">
+                <div class="card">
+                  <img src="./img/fd-wedges.jpg" class="card-img-top img-fluid" alt="Potato Wedges">
+                  <div class="card-body">
+                    <div class="card-title">Plentiful of Potato Wedges
+                      <button type="button" data-bs-toggle="modal" data-bs-target="#foodModal" class="btn btn-sm btn-success pull-right">Add</button></div>
+                    <p class="card-text">S$4.99</p>
                   </div>
                 </div>
               </div>
-            </div>
-            <!--START OF 2ND ROW-->
-            <div class="row mt-5">
-              <div class="col-6 col-sm-4">
+              <div class="col-6 col-sm-4 col-md-4 col-xl-4">
                 <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
+                  <img src="./img/fd-chicnugg.jpg" class="card-img-top img-fluid" alt="Chicken Nuggets">
                   <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button>placeholder</button>
+                    <div class="card-title">Box of Chicken Nuggets
+                      <button type="button" data-bs-toggle="modal" data-bs-target="#foodModal" class="btn btn-sm btn-success pull-right">Add</button></div>
+                    <p class="card-text">S$3.99</p>
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-sm-4">
+              <div class="col-6 col-sm-4 col-md-4 col-xl-4">
                 <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
+                  <img src="./img/fd-chicnugg.jpg" class="card-img-top img-fluid" alt="Chicken Nuggets">
                   <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button>placeholder</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-sm-4">
-                <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button>placeholder</button>
+                    <div class="card-title">Box of Chicken Nuggets
+                      <button type="button" data-bs-toggle="modal" data-bs-target="#foodModal" class="btn btn-sm btn-success pull-right">Add</button></div>
+                    <p class="card-text">S$3.99</p>
                   </div>
                 </div>
               </div>
             </div><!--END OF ROW 2-->
             </div>
           </div>
-        </div>
+        
         <div class="swiper-slide d-flex flex-column align-items-center">
           <div class="title mb-1" data-swiper-parallax="-300">LATEST BLOCKBUSTER TRAILER</div>
           <div class="title mb-3" data-swiper-parallax="-300">VENOM 2</div>
           <div class="subtitle" data-swiper-parallax="-200">EASE OUT, CLICK AND STREAM!</div>
-          <button type="button" class="btn btn-md btn-warning d-flex mt-4" data-swiper-parallax="-100"><h3><i class="fa fa-video-camera" aria-hidden="true"></i> WATCH NOW!</h3></button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#bbModal" class="btn btn-md btn-warning d-flex mt-4" data-swiper-parallax="-100"><h3><i class="fa fa-video-camera" aria-hidden="true"></i> WATCH NOW!</h3></button>
         </div>
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-pagination swiper-pagination2"></div>
-    </div><!--END OF SWIPER 2/CAROUSEL 3-->
+    </div></div><!--END OF SWIPER 2/CAROUSEL 3-->
 
-      <!-- Modals -->
+      <!-- Modal (Streaming Normal) -->
       <div class="modal fade" id="myModal" tabindex="-1">
         <div class="modal-dialog modal-fullscreen-sm-down modal-xl">
           <div class="modal-content">
@@ -234,7 +230,41 @@
             </div>
           </div>
         </div>
+      </div></div>
+      <!-- Modal (Food) -->
+      <div class="modal fade" id="foodModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Notification Alert</h3>
+            </div>
+            <div class="modal-body d-flex flex-column justify-content-center">
+              <img src="./img/gif-WIP.gif" class="img-fluid" alt="Work in progress..">
+              <h3><br>Sorry, this is just for fun.. :(</h3>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Leave Now!</button>
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- Modal (Streaming BB) -->
+      <div class="modal fade" id="bbModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen-sm-down modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">GrandFlix Live Streaming</h3>
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><h5>Close</h5></button>
+            </div>
+            <div class="modal-body">
+              <div class= "embed-responsive embed-responsive-16by9 d-flex justify-content-center">
+                <iframe id="vid-player2" width="560" height="315" src="https://www.youtube.com/embed/-FmWuCgJmxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="modal-footer d-flex mt-5">
+            </div>
+          </div>
+        </div>
+      </div></div>
 
       <!--TO DOWNLOAD OTHER PACKAGES/LIBRARIES-->
       <script src="js/jquery-3.6.0.min.js"></script>
@@ -305,6 +335,14 @@
             $("#myModal").on('show.bs.modal', function() {
                 $("#vid-player1").attr('src', url);
             });
+
+            var url2 = $("#vid-player2").attr('src');
+            $("#bbModal").on('hide.bs.modal', function() {
+                $("#vid-player2").attr('src', '');
+            });
+            $("#bbModal").on('show.bs.modal', function() {
+                $("#vid-player2").attr('src', url2);
+            });
         });
         </script>
         <!--PAUSE FUNCTION FOR FIRST CAROUSEL-->
@@ -331,11 +369,12 @@
 <!--
   BUGS TO FIX
   1. DO RESIZING FOR CAROUSEL 2
-  2. Add swiperjs parallex for food - find food photos
-  3. Modal for food selection
+  2. find food photos
   4. video modal sizing
-  5. Carou1 Blockbuster text get overlay, can restrict height for container and use CSS to style responsively
-  6. Add card for food menu in carou3
   7. About tabbed card in carou3
   8. when clicked on nav bar section, jquery to switch to relevant page and <a href tag>
+  9. Consider adding a curtain slider, add all scripts into js file + rerun node js for npm consistency
+  10. Link nav bar button to subsequent level for swiperjs
+  11. brand logo for carou1 overlay when size gets smaller, unable to apply style
+
 -->
