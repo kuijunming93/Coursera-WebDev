@@ -204,3 +204,25 @@ function dumpItem(selector){
 }
 
 onLoadcartCount();
+
+//JS SCRIPTS FOR SHOPPING CART ABOVE
+
+//JQUERY FOR BUTTON BLUR
+let myNavTogglebtn = document.getElementById('myNavTogglebtn');
+myNavTogglebtn.addEventListener('blur', () =>{
+    $("#myNavbar").collapse('hide');
+});
+
+//JUST TESTING
+//let cartButton = document.getElementById('cart-button');
+//let cartModal = document.getElementById('cartModal');
+//cartButton.addEventListener('blur', () =>{
+//    check = $(cartModal).is(':visible');
+//    console.log(check)
+//    if (check == false){
+//        $("#clickCancel").trigger("click");
+//        cartModal.classList.remove("active");
+//    }else{
+//        cartModal.classList.add("active");
+//    };
+//});

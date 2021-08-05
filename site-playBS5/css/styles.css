@@ -16,7 +16,7 @@ body{
     
 }
 
-#cart-button.cart-btn-class:hover{
+#cart-button.cart-btn-class:hover, #cart-button.cart-btn-class .active{
     -webkit-animation: rainbowText 3s infinite;
     -ms-keyframes: rainbowText 3s infinite;
     background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 100%);
@@ -214,8 +214,6 @@ footer .social-media-icons{
     0 0 82px white,
     0 0 102px white;**/
 }
-
-
 
 /**CART MODAL STYLING**/
 button.dumpButton{
