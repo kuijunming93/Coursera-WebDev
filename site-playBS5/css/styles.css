@@ -3,6 +3,18 @@ body{
     background-color: black;
 }
 
+#cart-button.cart-btn-class{
+    background: cadetblue;
+    color: white;
+    border: 1px solid white;
+    font-size: 90%;
+    position: fixed;
+    bottom: 15px; right: 15px;
+    padding: 10px;
+    z-index: 2;
+    border-radius: 5px;
+}
+
 .neonText-white{
     color: white;
     text-shadow:
@@ -175,6 +187,28 @@ footer span.bold{
     font-size: 125%;
 }
 
+footer .footer-sub-content{
+    color:grey; text-align: center;
+}
+
+footer .social-media-icons{
+    color:white;
+    text-align: center;
+}
+
+/**CART MODAL STYLING**/
+button.dumpButton{
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    color: white;
+}
+
+.productModal span{
+    /**PLACEHOLDER FOR TEXT STYLING**/
+
+}
+
 /**GENERAL STYLING**/
 .container{
     position: absolute;
@@ -293,7 +327,7 @@ footer span.bold{
         max-height: 150px;
         max-width: 150px;
         margin: 0 auto 5px auto;
-        font-size: 3.1vw;
+        font-size: 2.9vw;
     }
     #food-menu .card-body{
         padding: 5px;
