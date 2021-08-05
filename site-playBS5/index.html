@@ -76,12 +76,12 @@
                         <div class="col-auto"><h2>ON-DEMAND MOVIES</h2></div><hr>
                     </div>
                     <div id="movies-feature" class="row"> <!--CAN STYLE HERE TO RESTRICT THE PORTION BY HEIGHT-->
-                        <div class="col-2"><img src="./img/blackwidow-movie.jpg" class="img-fluid" alt="..."></div>
-                        <div class="col-2"><img src="./img/iceroad-movie.jpg" class="img-fluid" alt="..."></div>
-                        <div class="col-2"><img src="./img/kingdom-movie.jpg" class="img-fluid" alt="..."></div>
-                        <div class="col-2"><img src="./img/littlethings-movie.jpg" class="img-fluid" alt="..."></div>
-                        <div class="col-2"><img src="./img/profile-movie.jpg" class="img-fluid" alt="..."></div>
-                        <div class="col-2"><img src="./img/super-movie.jpg" class="img-fluid" alt="..."></div>
+                        <div class="col-2"><img src="./img/blackwidow-movie.jpg" class="img-fluid img-style1" alt="..."></div>
+                        <div class="col-2"><img src="./img/iceroad-movie.jpg" class="img-fluid img-style2" alt="..."></div>
+                        <div class="col-2"><img src="./img/kingdom-movie.jpg" class="img-fluid img-style3" alt="..."></div>
+                        <div class="col-2"><img src="./img/littlethings-movie.jpg" class="img-fluid img-style4" alt="..."></div>
+                        <div class="col-2"><img src="./img/profile-movie.jpg" class="img-fluid img-style5" alt="..."></div>
+                        <div class="col-2"><img src="./img/super-movie.jpg" class="img-fluid img-style6" alt="..."></div>
                     </div>
                     <!--<div class="row">
                         <div class="d-flex justify-content-center"><a href="#" class="btn btn-sm btn-primary">Subscribe and Watch Now!</a></div>
@@ -217,37 +217,54 @@
     <!--FOOTER-->
     <footer>
       <a id="anchor-footer"></a>
-      <div class="container d-flex justify-content-center mt-3">
-        <div class="row">
-          <div class="col-12">
+      <div class="container mt-3">
+        <div class="row d-flex justify-content-center">
+          <div class="col-sm-4 d-flex align-items-center">
+            <div class="col-12 mt-3 mb-2" style="width: 150px;"><img src="./img/brand-logo.png" class="img-fluid" alt="Brand Logo"></div>
+            <ul>
+              <li>
+                Founded in
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-sm-8 mt-3 d-flex justify-content-center">
             <div class="card">
               <div class="card-body">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#about-tab" type="button" role="tab">About</button>
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#feedback-tab" type="button" role="tab">Feedback</button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#info-tab" type="button" role="tab">Subscribe</button>
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#info-tab" type="button" role="tab">Subscription</button>
                   </li>
                 </ul>
                 <!--TAB CONTENTS-->
                 <div class="tab-content" id="myTabContent">
-                  <div class="tab-pane fade show active" id="about-tab" role="tabpanel" aria-labelledby="home-tab">
-                    <div class="container">
-                      <div class="row d-flex justify-content-center">
-                        <div class="col-12 mt-3 mb-2" style="width: 150px;"><img src="./img/brand-logo.png" class="img-fluid" alt="Brand Logo"></div>
-                        <div class="row">
-                          <ul class="list-group list-group-flush">
-                            <li class="list-group-item">GrandFlix Private Limited</li>
-                            <li class="list-group-item">Founded in 2021</li>
-                            <li class="list-group-item">A third item</li>
-                            <li class="list-group-item">A fourth item</li>
-                            <li class="list-group-item">And a fifth one</li>
-                          </ul>
+                  <div class="tab-pane fade show active" id="feedback-tab" role="tabpanel" aria-labelledby="feedback-tab">
+                    <!--CONTENT FOR FEEDBACK-->
+                    <h3 class="mt-2">Give us your Feedback!</h3>
+                    <form>
+                      <div class="mb-2">
+                        <label for="emailInput" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="example@email.com">
+                        <div id="emailHelp" class="form-text">If required, we will contact you via this email for your feedback.</div>
+                      </div>
+                      <div class="mb-2">
+                        <label for="feedbackInput" class="form-label">What do you want to tell us?</label>
+                        <textarea class="form-control" placeholder="Leave your feedback here" id="feedbackInput"></textarea>
+                      </div>
+                      <div class="row d-flex align-items-center">
+                        <div class="mb-2 col-9">
+                          <label for="dateInput" class="form-label">This happened on..</label>
+                          <input type="date" class="form-control" id="dateInput" aria-describedby="Date entry">
+                        </div>
+                        <div class="col-3">
+                          <button type="submit" class="btn btn-success btn-md pull-right">Send</button>
                         </div>
                       </div>
-                    </div>
-        
+                      
+                    </form>
                   </div><!--END OF TAB 1-->
                   <div class="tab-pane fade" id="info-tab" role="tabpanel" aria-labelledby="profile-tab">
                     <h3 class="mt-2" >Subscribe to our newsletter!</h3>
@@ -255,14 +272,14 @@
                       <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email address</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">Don't worry! Your email address will always be confidential and secured.</div>
+                        <div id="emailHelp" class="form-text">Don't worry! Your email address will always be safe and secured.</div>
                       </div>
                       <button type="submit" class="btn btn-primary pull-right">Submit</button>
                     </form>
                   </div><!--END OF TAB 2-->
                 </div><!--END OF TAB CONTENTS-->
               </div>
-            </div>
+            </div><!--END OF CARD COMPONENT-->
           </div>
         </div>
       </div>
