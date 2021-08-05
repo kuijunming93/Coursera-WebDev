@@ -1,6 +1,6 @@
 body{
     font-family: 'Oswald', sans-serif;
-    background-color: #222222;
+    background-color: black;
 }
 
 .neonText-white{
@@ -155,12 +155,24 @@ footer .container{
 footer .card{
     width: 32rem;
     position: relative;
-    background-color: #989898;
+    background: url('../img/time-travel.gif');
+    background-position: center;
+    color: white;
 }
 
-footer .form-control{
-    background-color: #a9a9a9;
+footer .form-control, footer .nav-link{
+    background: transparent;
     color: white;
+}
+
+footer section{
+    text-align: center;
+    color: white;
+}
+
+footer span.bold{
+    font-weight: bold;
+    font-size: 125%;
 }
 
 /**GENERAL STYLING**/
