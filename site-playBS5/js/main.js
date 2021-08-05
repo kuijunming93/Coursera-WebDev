@@ -157,7 +157,7 @@ function displayCart(){
         Object.values(cartItems).map(item => {
             productModal.innerHTML += `
             <div class="row productModal d-flex align-items-center">
-                <span class="col-2"><img src="./img/${item.tag}.jpg" class="img-fluid" style="width:100px;""></span>
+                <span class="col-2"><img style="border: 1px solid white; -webkit-animation: rainbowBorder 30s infinite; -ms-keyframes: rainbowBorder 30s infinite;" src="./img/${item.tag}.jpg" class="img-fluid" style="width:100px;""></span>
                 <span class="col-4">${item.name} <button class="dumpButton ${item.dumpClass} pull-right"><i class="fa fa-trash-o" aria-hidden="true"></i></button></span>
                 <span class="col-2 d-flex justify-content-center">$${item.price}</span>
                 <span class="col-1 d-flex justify-content-center">${item.inCart}</span>
