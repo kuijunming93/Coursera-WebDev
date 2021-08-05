@@ -158,7 +158,7 @@
                 <div class="card">
                   <img src="./img/fd-chicnugg.jpg" class="card-img-top img-fluid" alt="Chicken Nuggets">
                   <div class="card-body">
-                    <div class="card-title">Box of Chicken Nuggets</div>
+                    <div class="card-title">Chicken Nuggets</div>
                     <p class="card-text">S$3.99<button type="button" class="btn btn-sm btn-success pull-right add-cart">Add</button></p>
                   </div>
                 </div>
@@ -167,7 +167,7 @@
                 <div class="card">
                   <img src="./img/fd-mashedpotato.jpg" class="card-img-top img-fluid" alt="Mashed Potato">
                   <div class="card-body">
-                    <div class="card-title">Cup of Mashed Potato
+                    <div class="card-title">Mashed Potato
                       </div>
                     <p class="card-text">S$1.99<button type="button" class="btn btn-sm btn-success pull-right add-cart">Add</button></p>
                   </div>
@@ -177,7 +177,7 @@
                 <div class="card">
                   <img src="./img/fd-wedges.jpg" class="card-img-top img-fluid" alt="Potato Wedges">
                   <div class="card-body">
-                    <div class="card-title">Plenty of Potato Wedges
+                    <div class="card-title">Potato Wedges
                       </div>
                     <p class="card-text">S$4.99<button type="button" class="btn btn-sm btn-success pull-right add-cart">Add</button></p>
                   </div>
@@ -225,7 +225,7 @@
       <div class="container mt-3">
         <div class="row d-flex justify-content-center">
           <div class="col-md-4 d-flex flex-column align-items-center">
-            <div class="col-12 mt-3 mb-2" style="width: 150px;"><img src="./img/brand-delivery-logo.png" class="img-fluid" alt="Brand Logo"></div>
+            <div class="col-12 mt-3 mb-2" style="width: 150px;"><img src="./img/brand-delivery-logo.png" class="img-fluid footer-brandlogo" alt="Brand Logo"></div>
             <section><!--BREAKOUT TO ALLOW EASY CSS STYLING-->
               <span class="bold">GrandFlix Services<br></span>
               <span>Delivery - 24H x 7 days/week<br></span>
@@ -364,18 +364,18 @@
       <!-- Modal (FOOD CART, LINKED WITH JS SCRIPTS (SENSTIVE TO CHANGE)-->
       <div class="modal fade" id="cartModal" tabindex="-1">
         <div class="modal-dialog modal-lg">
-          <div class="modal-content">
+          <div class="modal-content colorize-border">
             <div class="modal-header">
-              <h3 class="modal-title">Your Cart</h3>
+              <h3 class="modal-title">Shopping Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></h3>
             </div>
             <!--MAIN CONTENT GOES HERE-->
             <div class="modal-body d-flex flex-column justify-content-center">
               <div class="container" style="position: relative;">
                 <div class="row">
                   <h5 class="col-2">Product</h5>
-                  <h5 class="col-3">Description</h5>
-                  <h5 class="col-2 d-flex justify-content-center">Unit Price</h5>
-                  <h5 class="col-2 d-flex justify-content-center">Quantity</h5>
+                  <h5 class="col-4">Description</h5>
+                  <h5 class="col-2 d-flex justify-content-center">Price</h5>
+                  <h5 class="col-1 d-flex justify-content-center">Quantity</h5>
                   <h5 class="col-3 d-flex justify-content-center">Subtotal</h5><hr>
                 </div>
               <div class="productModal"></div><hr><!--JS INSERTS HERE-->
@@ -504,7 +504,10 @@
   BUGS TO FIX
   4. video modal sizing
   8. when clicked on nav bar section, jquery to switch to relevant page and <a href tag>
-  9. Consider adding a curtain slider, add all scripts into js file + rerun node js for npm consistency
   10. Link nav bar button to subsequent level for swiperjs - requires jquery or js scripts
+  11. .blur jquery apply to buttons
+  12. resizing for mobile
+  13. rainbow border for cart page
+  14. possible cart entry and removal effects
 
 -->

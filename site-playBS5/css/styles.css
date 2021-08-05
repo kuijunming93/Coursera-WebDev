@@ -9,10 +9,18 @@ body{
     border: 1px solid white;
     font-size: 90%;
     position: fixed;
-    bottom: 15px; right: 15px;
+    bottom: 25px; right: 25px;
     padding: 10px;
     z-index: 2;
     border-radius: 5px;
+    
+}
+
+#cart-button.cart-btn-class:hover{
+    -webkit-animation: rainbowText 3s infinite;
+    -ms-keyframes: rainbowText 3s infinite;
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 100%);
+    
 }
 
 .neonText-white{
@@ -146,7 +154,7 @@ body{
     font-weight: bold;
 }
 
-/**MODAL STYPLING**/
+/**MODAL STYLING**/
 .modal-content{
     background: #18191A;
     background-position: center;
@@ -196,6 +204,19 @@ footer .social-media-icons{
     text-align: center;
 }
 
+.footer-brandlogo{ /**TO REVISIT**/
+    /**text-shadow:
+    0 0 7px #FCC201,
+    0 0 10px #FFD802,
+    0 0 21px #FFE000,
+    0 0 42px #FFE000,
+    0 0 62px #FAFAD2,
+    0 0 82px white,
+    0 0 102px white;**/
+}
+
+
+
 /**CART MODAL STYLING**/
 button.dumpButton{
     border: 0;
@@ -204,9 +225,9 @@ button.dumpButton{
     color: white;
 }
 
-.productModal span{
-    /**PLACEHOLDER FOR TEXT STYLING**/
-
+.colorize-border{
+    -webkit-animation: rainbowBorder 10s infinite;
+    -ms-keyframes: rainbowBorder 10s infinite;
 }
 
 /**GENERAL STYLING**/
@@ -296,6 +317,13 @@ button.dumpButton{
         position: absolute;
         bottom: 5px;right: 5px;
     }
+    #cartModal .modal-content h5{
+        font-size: 1rem !important;
+    }
+    .productModal span{
+        font-size: 80%;    
+    }
+
 }
 
 @media(max-width:480px){
@@ -327,13 +355,13 @@ button.dumpButton{
         max-height: 150px;
         max-width: 150px;
         margin: 0 auto 5px auto;
-        font-size: 2.9vw;
+        font-size: 3.25vw;
     }
     #food-menu .card-body{
         padding: 5px;
     }
     #food-menu .btn-success{
-        font-size: 2.5vw;
+        font-size: 2.75vw;
         padding: 2.5px;
         margin: 0;
         position: absolute;
@@ -341,6 +369,12 @@ button.dumpButton{
     }
     #food-menu .card-title {
         margin: 0;
+    }
+    #cartModal .modal-content h5{
+        font-size: 0.85rem !important;
+    }
+    .productModal span{
+        font-size: 70%;    
     }
 
 }
@@ -433,6 +467,34 @@ button.dumpButton{
 	100%{color: orange;}
 }
 
+@-webkit-keyframes rainbowbg{
+    0%{background-color: orange;}	
+  10%{background-color: purple;}	
+	20%{background-color: red;}
+  30%{background-color: CadetBlue;}
+	40%{background-color: yellow;}
+  50%{background-color: coral;}
+	60%{background-color: green;}
+  70%{background-color: cyan;}
+  80%{background-color: DeepPink;}
+  90%{background-color: DodgerBlue;}
+	100%{background-color: orange;}
+}
+
+@-webkit-keyframes rainbowBorder{
+    0%{border-color: orange;}
+    10%{border-color: purple;}	
+      20%{border-color: red;}
+    30%{border-color: CadetBlue;}
+      40%{border-color: yellow;}
+    50%{border-color: coral;}
+      60%{border-color: green;}
+    70%{border-color: cyan;}
+    80%{border-color: DeepPink;}
+    90%{border-color: DodgerBlue;}
+      100%{border-color: orange;}
+}
+
 @-ms-keyframes rainbowText{
     0%{color: orange;}	
   10%{color: purple;}	
@@ -445,6 +507,34 @@ button.dumpButton{
   80%{color: DeepPink;}
   90%{color: DodgerBlue;}
 	100%{color: orange;}
+}
+
+@-ms-keyframes rainbowbg{
+    0%{background-color: orange;}	
+  10%{background-color: purple;}	
+	20%{background-color: red;}
+  30%{background-color: CadetBlue;}
+	40%{background-color: yellow;}
+  50%{background-color: coral;}
+	60%{background-color: green;}
+  70%{background-color: cyan;}
+  80%{background-color: DeepPink;}
+  90%{background-color: DodgerBlue;}
+	100%{background-color: orange;}
+}
+
+@-ms-keyframes rainbowBorder{
+    0%{border-color: orange;}
+    10%{border-color: purple;}	
+      20%{border-color: red;}
+    30%{border-color: CadetBlue;}
+      40%{border-color: yellow;}
+    50%{border-color: coral;}
+      60%{border-color: green;}
+    70%{border-color: cyan;}
+    80%{border-color: DeepPink;}
+    90%{border-color: DodgerBlue;}
+      100%{border-color: orange;}
 }
 
 @-webkit-keyframes glowGreen{

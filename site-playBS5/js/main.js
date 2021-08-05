@@ -48,28 +48,28 @@ function initializeDumpBtn(){//HALF DONE, NEED TO FIGURE OUT HOW TO REMOVE THE I
 //SET UP PRODUCTS, IMPT TAG IS ITEM PHOTO NAME
 let products = [
     {
-        name: "Popcorn and Friends",
+        name: "Popcorn",
         tag: "fd-popcorn",
         dumpClass: "dump-fd-popcorn",
         price: 8.99,
         inCart: 0
     },
     {
-        name: "Box of Chicken Nuggets",
+        name: "Chicken Nuggets",
         tag: "fd-chicnugg",
         dumpClass: "dump-fd-chicnugg",
         price: 3.99,
         inCart: 0
     },
     {
-        name: "Cup of Mashed Potato",
+        name: "Mashed Potato",
         tag: "fd-mashedpotato",
         dumpClass: "dump-fd-mashedpotato",
         price: 1.99,
         inCart: 0
     },
     {
-        name: "Plenty of Potato Wedges",
+        name: "Potato Wedges",
         tag: "fd-wedges",
         dumpClass: "dump-fd-wedges",
         price: 4.99,
@@ -158,9 +158,9 @@ function displayCart(){
             productModal.innerHTML += `
             <div class="row productModal d-flex align-items-center">
                 <span class="col-2"><img src="./img/${item.tag}.jpg" class="img-fluid" style="width:100px;""></span>
-                <span class="col-3">${item.name} <button class="dumpButton ${item.dumpClass} pull-right"><i class="fa fa-trash-o" aria-hidden="true"></i></button></span>
+                <span class="col-4">${item.name} <button class="dumpButton ${item.dumpClass} pull-right"><i class="fa fa-trash-o" aria-hidden="true"></i></button></span>
                 <span class="col-2 d-flex justify-content-center">$${item.price}</span>
-                <span class="col-2 d-flex justify-content-center">${item.inCart}</span>
+                <span class="col-1 d-flex justify-content-center">${item.inCart}</span>
                 <span class="col-3 d-flex justify-content-center">$${(item.price*item.inCart).toFixed(2)}</span>
             </div>
             `
@@ -169,8 +169,8 @@ function displayCart(){
         totalCost = parseFloat(totalCost);
         productModal.innerHTML += `
             <hr><div class="row d-flex align-items-center">
-                <h5 class="col-9">Grand Total</h5>
-                <h5 class="col-3 d-flex justify-content-center">$${(totalCost).toFixed(2)}</h5>
+                <h4 class="col-9">Grand Total</h4>
+                <h4 class="col-3 d-flex justify-content-center">$${(totalCost).toFixed(2)}</h4>
             </div>
         `
     };
