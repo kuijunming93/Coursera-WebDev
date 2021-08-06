@@ -1,0 +1,632 @@
+body{
+    font-family: 'Oswald', sans-serif;
+    background-color: black;
+}
+
+#cart-button.cart-btn-class{
+    background: cadetblue;
+    color: white;
+    border: 1px solid white;
+    font-size: 90%;
+    position: fixed;
+    bottom: 25px; right: 25px;
+    padding: 10px;
+    z-index: 2;
+    border-radius: 5px;
+    transition: transform 0.5s, filter 0.5s ease-in-out;
+    transform-origin: center center;  filter: brightness(100%);
+}
+
+#cart-button.cart-btn-class:hover, #cart-button.cart-btn-class .active{
+    -webkit-animation: rainbowText 3s infinite;
+    -ms-keyframes: rainbowText 3s infinite;
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 100%);
+    
+}
+
+#delivery-subtitle p{
+    font-size: 150%;
+    margin-bottom: 0.5rem;
+}
+
+.neonText-white{
+    color: white;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+    -webkit-animation: glowGreen 2s infinite;
+    -ms-keyframes: glowGreen 2s infinite;
+}
+
+.navbar-brand a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#myCarousel .carousel-item{
+    height: 32rem; /**1rem = 16px**/
+    background: black;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url('../img/cinema-banner.jpg');
+    background-position: center;
+    color: white;
+    position: relative;
+}
+#carouselButton {
+    right:5px;
+    position: absolute;
+    bottom: 5px;
+    z-index: 1;
+    opacity: 0.7;
+}
+/**SECOND CAROUSEL STYLING**/
+.swiper-container{
+    height: 15rem; /**1rem = 16px**/
+    background: black;
+    color: white;
+    position: relative;
+}
+
+.swiper-slide{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.swiper-container .swiper-scrollbar-drag {
+    background: #fff;
+}
+
+.swiper-slide .btn-dark{
+    padding: 0;
+    border: none;
+    max-width: 400px;
+    transition: transform 0.5s, filter 0.3s ease-in-out;
+    transform-origin: center center;  filter: brightness(100%);
+}
+
+.swiper-slide .btn:hover{
+    filter: brightness(120%);  transform: scale(1.01);
+}
+/**THIRD CAROUSEL STYLING**/
+#myCarousel-3.swiper-container{
+    height: 42rem; /**1rem = 16px**/
+    background: black;
+    background-position: center;
+    color: white;
+    position: relative;
+}
+.parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper-slide .title {
+    font-size: 41px;
+    font-weight: 300;
+    background-color: black;
+    color: white; 
+    display: inline;
+    padding: 0.5rem;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+.swiper-slide .subtitle {
+    font-size: 28px;
+    -webkit-animation: rainbowText 10s infinite;
+    -ms-keyframes: rainbowText 10s infinite;
+}
+
+.swiper-slide .text {
+    font-size: 14px;
+    max-width: 400px;
+    line-height: 1.3;
+}
+
+.btn-warning {
+    color: black;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 100%);
+}
+
+/**3RD CAROUSEL FOOD MENU SIZING**/
+#food-menu .card{
+    max-height: 250px;
+    max-width: 250px;
+    margin: 0 auto 10px auto;
+    background-color: white;
+    color: black;
+}
+
+#food-menu .card-body{
+    padding: 10px;
+}
+
+#food-menu .card-title {
+    font-weight: bold;
+}
+
+/**MODAL STYLING**/
+.modal-content{
+    background: #18191A;
+    background-position: center;
+}
+.modal-content{
+    color: white;
+}
+
+/**FOOTER STYLING**/
+footer{
+    height: 20rem;
+}
+
+footer .container{
+    position: relative;
+}
+
+footer .card{
+    width: 32rem;
+    position: relative;
+    background: url('../img/time-travel-resized.gif');
+    background-position: center;
+    color: white;
+}
+
+footer .form-control, footer .nav-link{
+    background: transparent;
+    color: white;
+}
+
+footer section{
+    text-align: center;
+    color: white;
+}
+
+footer span.bold{
+    font-weight: bold;
+    font-size: 125%;
+}
+
+footer .footer-sub-content{
+    color:grey; text-align: center;
+}
+
+footer .social-media-icons{
+    color:white;
+    text-align: center;
+}
+
+.footer-brandlogo { /**TO REVISIT**/
+    /**box-shadow: 0px 0px 5px #fff;**/
+    /**text-shadow: 0px 0px 100px #fff;**/
+    /**text-shadow:
+    0 0 7px #FCC201,
+    0 0 10px #FFD802,
+    0 0 21px #FFE000,
+    0 0 42px #FFE000,
+    0 0 62px #FAFAD2,
+    0 0 82px white,
+    0 0 102px white;**/
+}
+
+/**CART MODAL STYLING**/
+button.dumpButton{
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    color: white;
+}
+
+.colorize-border{
+    -webkit-animation: rainbowBorder 10s infinite;
+    -ms-keyframes: rainbowBorder 10s infinite;
+}
+
+/**CART SELECT ANIMATION**/
+.animateSelect{
+    -webkit-animation: animateSelect 1s infinite;
+    -ms-keyframes: animateSelect 1s infinite;
+    background: darkred !important;
+}
+
+@-webkit-keyframes animateSelect{
+    0%{filter: brightness(100%);  transform: scale(1.00);}
+    50%{filter: brightness(125%);  transform: scale(1.05);}
+    100%{filter: brightness(100%);  transform: scale(1.00);}
+}
+
+@-ms-keyframes animateSelect{
+    0%{filter: brightness(100%);  transform: scale(1.00);}
+    50%{filter: brightness(125%);  transform: scale(1.05);}
+    100%{filter: brightness(100%);  transform: scale(1.00);}
+}
+
+
+/**GENERAL STYLING**/
+#delivery-banner.img-fluid{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 50px;
+}
+
+#movies-feature .img-fluid{
+    height: auto;
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto 5px auto;
+    transition: transform 1s, filter 1s ease-in-out;
+    transform-origin: center center;  filter: brightness(90%);
+}
+
+/**FOOD MENU BUTTON STYLING**/
+a.add-cartIcon{
+    position: absolute;
+    width: 100%;
+    vertical-align: middle;
+    background-color: transparent;
+    opacity: 0.8;
+    color: transparent;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.35rem;
+}
+
+#hover-showBtn.add-cartTag{
+    cursor: pointer !important;
+}
+
+#hover-showBtn.add-cartTag:hover ~ a.add-cartIcon, a.add-cartIcon:hover{
+    background-color: black;
+    color: white;
+}
+
+
+/**MOVIE FEATURES STYLING GRAPHICS**/
+#movies-feature .img-style1{
+    -webkit-animation: animateGlow 1.5s infinite;
+    -ms-keyframes: animateGlow 1.5s infinite;
+}
+#movies-feature .img-style2{
+    -webkit-animation: animateGlow 1.75s infinite;
+    -ms-keyframes: animateGlow 1.75s infinite;
+}
+#movies-feature .img-style3{
+    -webkit-animation: animateGlow 2s infinite;
+    -ms-keyframes: animateGlow 2s infinite;
+}
+#movies-feature .img-style4{
+    -webkit-animation: animateGlow 2.25s infinite;
+    -ms-keyframes: animateGlow 2.25s infinite;
+}
+#movies-feature .img-style5{
+    -webkit-animation: animateGlow 2.5s infinite;
+    -ms-keyframes: animateGlow 2.5s infinite;
+}
+#movies-feature .img-style6{
+    -webkit-animation: animateGlow 2.75s infinite;
+    -ms-keyframes: animateGlow 2.75s infinite;
+}
+@-webkit-keyframes animateGlow{
+    0%{filter: brightness(100%);  transform: scale(1.00);}
+    50%{filter: brightness(130%);  transform: scale(1.05);}
+    100%{filter: brightness(100%);  transform: scale(1.00);}
+}
+
+@-ms-keyframes animateGlow{
+    0%{filter: brightness(110%);  transform: scale(1.01);}
+    17%{filter: brightness(120%);  transform: scale(1.025);}
+    32%{filter: brightness(125%);  transform: scale(1.035);}
+    48%{filter: brightness(130%);  transform: scale(1.05);}
+    64%{filter: brightness(125%);  transform: scale(1.035);}
+    82%{filter: brightness(120%);  transform: scale(1.025);}
+    100%{filter: brightness(110%);  transform: scale(1.01);}
+}
+
+#movies-feature .col-2{
+    margin: 0 auto 0 auto;
+    padding: 0;
+}
+
+@media(min-width:480px) and (max-width:992px){
+    #delivery-subtitle p{
+        font-size: 120%;
+    }
+    #myCarousel .carousel-item{
+        height: 24rem; /**1rem = 16px**/
+    }
+    #food-menu .card{
+        max-height: 200px;
+        max-width: 200px;
+        font-size: 90%;
+    }
+    #food-menu .card-body{
+        padding: 10px;
+    }
+    #food-menu .btn-success{
+        font-size: 90%;
+        padding: 4px;
+        margin: 0;
+        position: absolute;
+        bottom: 5px;right: 5px;
+    }
+    #cartModal .modal-content h5{
+        font-size: 1rem !important;
+    }
+    .productModal span{
+        font-size: 80%;    
+    }
+    a.add-cartIcon{
+        font-size: 1.1rem;
+    }
+
+}
+
+@media(max-width:480px){
+    #delivery-subtitle p{
+        font-size: 85%;
+    }
+    #myCarousel .carousel-item{
+        height: 18rem; /**1rem = 16px**/
+    }
+    /**CAROUSEL 2 MOBILE VIEW SIZING**/
+    .swiper-slide .btn{
+        max-width: 450px;
+        font-size: 180%;
+    }
+    .swiper-container{
+        height: 10rem;
+    }
+    /**CAROUSEL 3 MOBILE VIEW SIZING**/
+    #myCarousel-3.swiper-container{
+        height: 36rem;
+    }
+    .swiper-slide .title{
+        font-size: 125%;
+    }
+    .swiper-slide .subtitle{
+        font-size: 100%;
+    }
+    .btn-warning h3{
+        font-size: 70%;
+        margin: 0;padding: 0;
+    }
+    #food-menu .card{
+        max-height: 150px;
+        max-width: 150px;
+        margin: 0 auto 5px auto;
+        font-size: 3.25vw;
+    }
+    #food-menu .card-body{
+        padding: 5px;
+    }
+    #food-menu .btn-success{
+        font-size: 2.75vw;
+        padding: 2.5px;
+        margin: 0;
+        position: absolute;
+        bottom: 5px;right: 5px;
+    }
+    #food-menu .card-title {
+        margin: 0;
+    }
+    #cartModal .modal-content h5{
+        font-size: 0.85rem !important;
+    }
+    .productModal span{
+        font-size: 70%;    
+    }
+    a.add-cartIcon{
+        font-size: 1.1rem;
+    }
+    a.add-cartIcon{
+        -webkit-animation: animateMenuIcon 4.5s infinite;
+        -ms-keyframes: animateMenuIcon 4.5s infinite;
+    }
+}
+@-webkit-keyframes animateMenuIcon{
+    0%{background-color: transparent; color: transparent}
+    50%{background-color: black; color: white;}	
+  100%{background-color: transparent; color: transparent}
+}
+
+@-ms-keyframes animateMenuIcon{
+    0%{background-color: transparent; color: transparent}
+    50%{background-color: black; color: white;}	
+  100%{background-color: transparent; color: transparent}
+}
+
+@media(min-width:400px) and (max-width:480px){
+    #food-menu .card{
+        font-size: 12px;
+    }
+    #food-menu .btn-success{
+        font-size: 10px;
+    }
+}
+
+@media(min-width:1400px){
+    #food-menu .card{
+        max-height: 300px;
+        max-width: 300px;
+    }
+}
+@media(max-width:499px){
+    #brandlogo-banner.img-fluid{
+        height: 70px;
+        width: 70px;
+    }
+    #cinema-banner p{
+        font-size: 80%;
+    }
+    footer .card{
+        width: 20rem;
+        position: relative;
+    }
+    footer form .btn{
+        font-size: 4vw;
+        padding: .25rem 0.5rem;
+    }
+}
+@media(min-width:500px) and (max-width:767px){
+    /**XS TO MD STYLING**/
+    #brandlogo-banner.img-fluid{
+        height: 125px;
+        width: 125px;
+    }
+    footer .card{
+        width: 24rem;
+        position: relative;
+    }
+}
+
+@media(min-width:768px) and (max-width:992px){
+    /**MED TO LG STYLING**/
+    #brandlogo-banner.img-fluid{
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media(min-width:992) and (max-width:1200){
+    /**LG TO XL STYLING**/
+    #brandlogo-banner.img-fluid{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media(min-width:1200px){
+    #myCarousel .carousel-item{
+        height: 36rem;
+    }
+    .mySwiper2{
+        transition: filter 0.3s ease-in-out;
+        filter: brightness(50%);
+    }
+    .mySwiper2:hover{
+        filter: brightness(100%);
+    }
+}
+
+
+/**TEXT GLOW EFFECTS**/
+@-webkit-keyframes rainbowText{
+    0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+
+@-webkit-keyframes rainbowbg{
+    0%{background-color: orange;}	
+  10%{background-color: purple;}	
+	20%{background-color: red;}
+  30%{background-color: CadetBlue;}
+	40%{background-color: yellow;}
+  50%{background-color: coral;}
+	60%{background-color: green;}
+  70%{background-color: cyan;}
+  80%{background-color: DeepPink;}
+  90%{background-color: DodgerBlue;}
+	100%{background-color: orange;}
+}
+
+@-webkit-keyframes rainbowBorder{
+    0%{border-color: orange;}
+    10%{border-color: purple;}	
+      20%{border-color: red;}
+    30%{border-color: CadetBlue;}
+      40%{border-color: yellow;}
+    50%{border-color: coral;}
+      60%{border-color: green;}
+    70%{border-color: cyan;}
+    80%{border-color: DeepPink;}
+    90%{border-color: DodgerBlue;}
+      100%{border-color: orange;}
+}
+
+@-ms-keyframes rainbowText{
+    0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+
+@-ms-keyframes rainbowbg{
+    0%{background-color: orange;}	
+  10%{background-color: purple;}	
+	20%{background-color: red;}
+  30%{background-color: CadetBlue;}
+	40%{background-color: yellow;}
+  50%{background-color: coral;}
+	60%{background-color: green;}
+  70%{background-color: cyan;}
+  80%{background-color: DeepPink;}
+  90%{background-color: DodgerBlue;}
+	100%{background-color: orange;}
+}
+
+@-ms-keyframes rainbowBorder{
+    0%{border-color: orange;}
+    10%{border-color: purple;}	
+      20%{border-color: red;}
+    30%{border-color: CadetBlue;}
+      40%{border-color: yellow;}
+    50%{border-color: coral;}
+      60%{border-color: green;}
+    70%{border-color: cyan;}
+    80%{border-color: DeepPink;}
+    90%{border-color: DodgerBlue;}
+      100%{border-color: orange;}
+}
+
+@-webkit-keyframes glowGreen{
+    0%{color: lightgreen;}
+    33%{color: green;}
+    66%{color: darkgreen;}
+    100%{color: green;}
+}
+
+@-ms-keyframes glowGreen{
+    0%{color: lightgreen;}
+    33%{color: green;}
+    66%{color: darkgreen;}
+    100%{color: green;}
+}
