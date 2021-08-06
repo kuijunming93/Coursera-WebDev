@@ -101,18 +101,21 @@ let products = [
 for (let i=0; i < carts.length; i++){
     carts[i].addEventListener('click', () => {
         cartCount(products[i]);
+        soundPop.play();
     });
 };
 
 for (let i=0; i < cartsIcon.length; i++){
     cartsIcon[i].addEventListener('click', () => {
         cartCount(products[i]);
+        soundPop.play();
     });
 };
 
 for (let i=0; i < cartsTag.length; i++){
     cartsTag[i].addEventListener('click', () => {
         cartCount(products[i]);
+        soundPop.play();
     });
 };
 
@@ -131,7 +134,6 @@ function cartCount(selectedItem) {
     setItems(selectedItem);
     addCost(selectedItem);
     animateCart();
-    soundPop.play();
 }
 
 function onLoadcartCount(){
