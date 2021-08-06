@@ -24,6 +24,11 @@ body{
     
 }
 
+#delivery-subtitle p{
+    font-size: 150%;
+    margin-bottom: 0.5rem;
+}
+
 .neonText-white{
     color: white;
     text-shadow:
@@ -252,6 +257,11 @@ button.dumpButton{
 
 
 /**GENERAL STYLING**/
+#delivery-banner.img-fluid{
+    width: 100% !important;
+    height: 100% !important;
+}
+
 .container{
     position: absolute;
     bottom: 0;
@@ -341,6 +351,9 @@ a.add-cartIcon{
 }
 
 @media(min-width:480px) and (max-width:992px){
+    #delivery-subtitle p{
+        font-size: 120%;
+    }
     #myCarousel .carousel-item{
         height: 24rem; /**1rem = 16px**/
     }
@@ -372,6 +385,9 @@ a.add-cartIcon{
 }
 
 @media(max-width:480px){
+    #delivery-subtitle p{
+        font-size: 85%;
+    }
     #myCarousel .carousel-item{
         height: 18rem; /**1rem = 16px**/
     }
