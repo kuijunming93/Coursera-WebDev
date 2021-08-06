@@ -1,3 +1,7 @@
+//PLAY AUDIO FOR CLICK
+let soundPop = new Audio("./img/sound-pop.mp3");
+let soundDrop = new Audio("./img/sound-drop.mp3");
+
 //JS FOR CART SYSTEM
 let carts = document.querySelectorAll('.add-cart');
 let cartsTag = document.querySelectorAll('.add-cartTag');
@@ -9,7 +13,7 @@ cartBtn.addEventListener('click', () =>{
     initializeDumpBtn();
 });
 
-function initializeDumpBtn(){//HALF DONE, NEED TO FIGURE OUT HOW TO REMOVE THE ITEM IN CART AND USE REMOVECOST FUNC
+function initializeDumpBtn(){
     cancelBtn = document.querySelectorAll('.dumpButton');
     for (let n=0; n < cancelBtn.length; n++){
         cancelBtn[n].addEventListener('click', () => {
@@ -126,6 +130,8 @@ function cartCount(selectedItem) {
     };
     setItems(selectedItem);
     addCost(selectedItem);
+    animateCart();
+    soundPop.play();
 }
 
 function onLoadcartCount(){
@@ -216,6 +222,18 @@ function dumpItem(selector){
         localStorage.setItem("mainCart", null);
         document.querySelector('.cart-btn-class span').textContent = 0;
     };    
+    soundDrop.play();
+}
+
+//Animate function for item selection on cart button - add class
+function animateCart(){
+    let cartButton = document.getElementById('cart-button');
+    if (cartButton.classList.contains('animateSelect') != true){
+        cartButton.classList.add("animateSelect");
+    };
+    setTimeout(function(){
+        cartButton.classList.remove("animateSelect");
+    }, 1000);    
 }
 
 onLoadcartCount();
@@ -241,10 +259,3 @@ myNavTogglebtn.addEventListener('blur', () =>{
 //        cartModal.classList.add("active");
 //    };
 //});
-
-//BASIC CAROUSEL 1 SETTING
-var myCarousel = document.querySelector('#myCarousel');
-var carousel = new bootstrap.Carousel(myCarousel, {
-    pause: 'hover',
-    touch: true
-});

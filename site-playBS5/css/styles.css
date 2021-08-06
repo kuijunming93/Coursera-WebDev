@@ -13,6 +13,8 @@ body{
     padding: 10px;
     z-index: 2;
     border-radius: 5px;
+    transition: transform 0.5s, filter 0.5s ease-in-out;
+    transform-origin: center center;  filter: brightness(100%);
 }
 
 #cart-button.cart-btn-class:hover, #cart-button.cart-btn-class .active{
@@ -203,7 +205,9 @@ footer .social-media-icons{
     text-align: center;
 }
 
-.footer-brandlogo{ /**TO REVISIT**/
+.footer-brandlogo { /**TO REVISIT**/
+    /**box-shadow: 0px 0px 5px #fff;**/
+    /**text-shadow: 0px 0px 100px #fff;**/
     /**text-shadow:
     0 0 7px #FCC201,
     0 0 10px #FFD802,
@@ -227,6 +231,26 @@ button.dumpButton{
     -ms-keyframes: rainbowBorder 10s infinite;
 }
 
+/**CART SELECT ANIMATION**/
+.animateSelect{
+    -webkit-animation: animateSelect 1s infinite;
+    -ms-keyframes: animateSelect 1s infinite;
+    background: darkred !important;
+}
+
+@-webkit-keyframes animateSelect{
+    0%{filter: brightness(100%);  transform: scale(1.00);}
+    50%{filter: brightness(125%);  transform: scale(1.05);}
+    100%{filter: brightness(100%);  transform: scale(1.00);}
+}
+
+@-ms-keyframes animateSelect{
+    0%{filter: brightness(100%);  transform: scale(1.00);}
+    50%{filter: brightness(125%);  transform: scale(1.05);}
+    100%{filter: brightness(100%);  transform: scale(1.00);}
+}
+
+
 /**GENERAL STYLING**/
 .container{
     position: absolute;
@@ -241,7 +265,7 @@ button.dumpButton{
     max-width: 100%;
     padding: 0;
     margin: 0 auto 5px auto;
-    transition: transform 0.1s, filter 0.1s ease-in-out;
+    transition: transform 1s, filter 1s ease-in-out;
     transform-origin: center center;  filter: brightness(90%);
 }
 
@@ -296,13 +320,9 @@ a.add-cartIcon{
     -ms-keyframes: animateGlow 2.75s infinite;
 }
 @-webkit-keyframes animateGlow{
-    0%{filter: brightness(110%);  transform: scale(1.01);}
-    17%{filter: brightness(120%);  transform: scale(1.025);}
-    32%{filter: brightness(125%);  transform: scale(1.035);}
-    48%{filter: brightness(130%);  transform: scale(1.05);}
-    64%{filter: brightness(125%);  transform: scale(1.035);}
-    82%{filter: brightness(120%);  transform: scale(1.025);}
-    100%{filter: brightness(110%);  transform: scale(1.01);}
+    0%{filter: brightness(100%);  transform: scale(1.00);}
+    50%{filter: brightness(130%);  transform: scale(1.05);}
+    100%{filter: brightness(100%);  transform: scale(1.00);}
 }
 
 @-ms-keyframes animateGlow{
@@ -371,7 +391,7 @@ a.add-cartIcon{
         font-size: 125%;
     }
     .swiper-slide .subtitle{
-        font-size: 85%;
+        font-size: 100%;
     }
     .btn-warning h3{
         font-size: 70%;
@@ -405,7 +425,23 @@ a.add-cartIcon{
     a.add-cartIcon{
         font-size: 1.1rem;
     }
+    a.add-cartIcon{
+        -webkit-animation: animateMenuIcon 4.5s infinite;
+        -ms-keyframes: animateMenuIcon 4.5s infinite;
+    }
 }
+@-webkit-keyframes animateMenuIcon{
+    0%{background-color: transparent; color: transparent}
+    50%{background-color: black; color: white;}	
+  100%{background-color: transparent; color: transparent}
+}
+
+@-ms-keyframes animateMenuIcon{
+    0%{background-color: transparent; color: transparent}
+    50%{background-color: black; color: white;}	
+  100%{background-color: transparent; color: transparent}
+}
+
 @media(min-width:400px) and (max-width:480px){
     #food-menu .card{
         font-size: 12px;
