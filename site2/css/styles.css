@@ -18,6 +18,8 @@ body{
 }
 
 #cart-button.cart-btn-class:hover, #cart-button.cart-btn-class .active{
+    -webkit-transform: translateZ(0);
+    -ms-keyframes: translateZ(0);
     -webkit-animation: rainbowText 3s infinite;
     -ms-keyframes: rainbowText 3s infinite;
     background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 100%);
@@ -40,8 +42,10 @@ body{
     0 0 92px #0fa,
     0 0 102px #0fa,
     0 0 151px #0fa;
-    -webkit-animation: glowGreen 2s infinite;
-    -ms-keyframes: glowGreen 2s infinite;
+    -webkit-transform: translateZ(0);
+    -ms-keyframes: translateZ(0);
+    -webkit-animation: glowGreen 6s infinite;
+    -ms-keyframes: glowGreen 6s infinite;
 }
 
 .navbar-brand a{
@@ -128,6 +132,8 @@ body{
 
 .swiper-slide .subtitle {
     font-size: 28px;
+    -webkit-transform: translateZ(0);
+    -ms-keyframes: translateZ(0);
     -webkit-animation: rainbowText 10s infinite;
     -ms-keyframes: rainbowText 10s infinite;
 }
@@ -233,12 +239,16 @@ button.dumpButton{
 }
 
 .colorize-border{
+    -webkit-transform: translateZ(0);
+    -ms-keyframes: translateZ(0);
     -webkit-animation: rainbowBorder 10s infinite;
     -ms-keyframes: rainbowBorder 10s infinite;
 }
 
 /**CART SELECT ANIMATION**/
 .animateSelect{
+    -webkit-transform: translateZ(0);
+    -ms-keyframes: translateZ(0);
     -webkit-animation: animateSelect 1s infinite;
     -ms-keyframes: animateSelect 1s infinite;
     background: darkred !important;
@@ -445,6 +455,8 @@ a.add-cartIcon{
         font-size: 1.1rem;
     }
     a.add-cartIcon{
+        -webkit-transform: translateZ(0);
+        -ms-keyframes: translateZ(0);
         -webkit-animation: animateMenuIcon 4.5s infinite;
         -ms-keyframes: animateMenuIcon 4.5s infinite;
     }
@@ -622,14 +634,16 @@ a.add-cartIcon{
 
 @-webkit-keyframes glowGreen{
     0%{color: lightgreen;}
-    33%{color: green;}
-    66%{color: darkgreen;}
-    100%{color: green;}
+    25%{color: green;}
+    50%{color: darkgreen;}
+    75%{color: green;}
+    100%{color: lightgreen;}
 }
 
 @-ms-keyframes glowGreen{
     0%{color: lightgreen;}
-    33%{color: green;}
-    66%{color: darkgreen;}
-    100%{color: green;}
+    25%{color: green;}
+    50%{color: darkgreen;}
+    75%{color: green;}
+    100%{color: lightgreen;}
 }
