@@ -57,6 +57,7 @@ body{
         rgba(0, 0, 0, 0.5)
       ), url('../img/cinema-banner.jpg');
     background-position: center;
+    background-size: cover;
     color: white;
     position: relative;
 }
@@ -257,10 +258,12 @@ button.dumpButton{
 
 
 /**GENERAL STYLING**/
-#delivery-banner.img-fluid{
-    width: 100% !important;
-    height: 100% !important;
+#delivery-banner.carousel-item{
+    background: url('../img/delivery-banner-resized.gif') no-repeat;
+    background-position: center;
+    background-size: cover;
 }
+
 
 .container{
     position: absolute;
