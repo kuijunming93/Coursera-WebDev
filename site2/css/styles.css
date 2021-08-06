@@ -2,14 +2,13 @@
     color: white;
     -webkit-transform: translateZ(0);
     -ms-keyframes: translateZ(0);
-    -webkit-animation: glowGreen 9s infinite;
-    -ms-keyframes: glowGreen 9s infinite;
+    -webkit-animation: glowGreen 3s infinite;
+    -ms-keyframes: glowGreen 3s infinite;
 }
 @media(min-width:768px){
     /**REMOVAL OF GRAPHICS FOR OPTIMIZATION AT MOBILE SIZE**/
     .neonText-white{
-        /***color: white;**/
-        /**text-shadow:
+        text-shadow:
         0 0 7px #fff,
         0 0 10px #fff,
         0 0 21px #fff,
@@ -17,10 +16,10 @@
         0 0 82px #0fa,
         0 0 92px #0fa,
         0 0 102px #0fa,
-        0 0 151px #0fa;**/
+        0 0 151px #0fa;
     }
-    /****/
 }
+
 body{
     font-family: 'Oswald', sans-serif;
     background-color: black;
@@ -637,16 +636,16 @@ a.add-cartIcon{
 
 @-webkit-keyframes glowGreen{
     0%{color: lightgreen;}
-    25%{color: green;}
+    45%{color: green;}
     50%{color: darkgreen;}
-    75%{color: green;}
+    55%{color: green;}
     100%{color: lightgreen;}
 }
 
 @-ms-keyframes glowGreen{
     0%{color: lightgreen;}
-    25%{color: green;}
+    45%{color: green;}
     50%{color: darkgreen;}
-    75%{color: green;}
+    55%{color: green;}
     100%{color: lightgreen;}
 }
