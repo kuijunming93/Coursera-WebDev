@@ -1,10 +1,23 @@
+.neonText-white{
+    color: white;
+    -webkit-transform: translateZ(0);
+    -ms-keyframes: translateZ(0);
+    -webkit-animation: glowGreen 9s infinite;
+    -ms-keyframes: glowGreen 9s infinite;
+}
 @media(min-width:768px){
     /**REMOVAL OF GRAPHICS FOR OPTIMIZATION AT MOBILE SIZE**/
     .neonText-white{
-        -webkit-transform: translateZ(0);
-        -ms-keyframes: translateZ(0);
-        -webkit-animation: glowGreen 9s infinite;
-        -ms-keyframes: glowGreen 9s infinite;
+        /***color: white;**/
+        /**text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;**/
     }
     /****/
 }
@@ -38,19 +51,6 @@ body{
 #delivery-subtitle p{
     font-size: 150%;
     margin-bottom: 0.5rem;
-}
-
-.neonText-white{
-    color: white;
-    text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px #0fa,
-    0 0 82px #0fa,
-    0 0 92px #0fa,
-    0 0 102px #0fa,
-    0 0 151px #0fa;
 }
 
 .navbar-brand a{
