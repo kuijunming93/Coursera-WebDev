@@ -28,7 +28,7 @@
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
           <div class="container-fluid">
               <div class="navbar-brand">
-                <a href="./index.html"><img src="./img/brand-logo.png" class="img-fluid" alt="Brand-Logo" style="max-width:50px;"> GrandFlix</a>
+                <a href="#"><img src="./img/brand-logo.png" class="img-fluid" alt="Brand-Logo" style="max-width:50px;"> GrandFlix</a>
               </div> <!--NAVBAR HEADER AND TITLE-->
               <button id="myNavTogglebtn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,7 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="navbar-nav me-auto">
                   <li class="nav-item">
-                    <a class="nav-link active" href="./index.html"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a>
+                    <a class="nav-link active" href="#"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#anchor-film"><i class="fa fa-film" aria-hidden="true"></i> Film & Series</a>
@@ -55,11 +55,11 @@
       </nav><!--NAV BAR SECTION-->
 
       <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
+          <!--<div class="carousel-indicators">
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div> <!--SLIDING-->
+          </div>--> <!--SLIDING-->
 
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="4000">
@@ -147,7 +147,8 @@
             <div id="food-menu" class="row"><!--INTRODUCED 1 ROW FOR RESIZEABILITY-->
               <div class="col-6 col-sm-4 col-md-4 col-xl-4">
                 <div class="card">
-                  <img src="./img/fd-popcorn.jpg" class="card-img-top img-fluid" alt="Popocorns">
+                  <a id="hover-showBtn" class="add-cartTag"><img src="./img/fd-popcorn.jpg" class="card-img-top img-fluid" alt="Popocorns"></a>
+                  <a class="add-cartIcon">Add to Cart</a>
                   <div class="card-body">
                     <div class="card-title">Popcorn and Friends</div>
                     <p class="card-text">S$8.99<button type="button" class="btn btn-sm btn-success pull-right add-cart">Add</button></p>
@@ -156,7 +157,8 @@
               </div>
               <div class="col-6 col-sm-4 col-md-4 col-xl-4">
                 <div class="card">
-                  <img src="./img/fd-chicnugg.jpg" class="card-img-top img-fluid" alt="Chicken Nuggets">
+                  <a id="hover-showBtn" class="add-cartTag"><img src="./img/fd-chicnugg.jpg" class="card-img-top img-fluid" alt="Chicken Nuggets"></a>
+                  <a class="add-cartIcon">Add to Cart</a>
                   <div class="card-body">
                     <div class="card-title">Chicken Nuggets</div>
                     <p class="card-text">S$3.99<button type="button" class="btn btn-sm btn-success pull-right add-cart">Add</button></p>
@@ -165,7 +167,8 @@
               </div>
               <div class="col-6 col-sm-4 col-md-4 col-xl-4">
                 <div class="card">
-                  <img src="./img/fd-mashedpotato.jpg" class="card-img-top img-fluid" alt="Mashed Potato">
+                  <a id="hover-showBtn" class="add-cartTag"><img src="./img/fd-mashedpotato.jpg" class="card-img-top img-fluid" alt="Mashed Potato"></a>
+                  <a class="add-cartIcon">Add to Cart</a>
                   <div class="card-body">
                     <div class="card-title">Mashed Potato
                       </div>
@@ -175,7 +178,8 @@
               </div><!--TECHNICALLY ROW 2 ON MD/LG SCREEN-->
               <div class="col-6 col-sm-4 col-md-4 col-xl-4">
                 <div class="card">
-                  <img src="./img/fd-wedges.jpg" class="card-img-top img-fluid" alt="Potato Wedges">
+                  <a id="hover-showBtn" class="add-cartTag"><img src="./img/fd-wedges.jpg" class="card-img-top img-fluid" alt="Potato Wedges"></a>
+                  <a class="add-cartIcon">Add to Cart</a>
                   <div class="card-body">
                     <div class="card-title">Potato Wedges
                       </div>
@@ -185,7 +189,8 @@
               </div>
               <div class="col-6 col-sm-4 col-md-4 col-xl-4">
                 <div class="card">
-                  <img src="./img/fd-juice.jpg" class="card-img-top img-fluid" alt="Cranberry Juice">
+                  <a id="hover-showBtn" class="add-cartTag"><img src="./img/fd-juice.jpg" class="card-img-top img-fluid" alt="Cranberry Juice"></a>
+                  <a class="add-cartIcon">Add to Cart</a>
                   <div class="card-body">
                     <div class="card-title">Cranberry Juice
                       </div>
@@ -195,7 +200,8 @@
               </div>
               <div class="col-6 col-sm-4 col-md-4 col-xl-4">
                 <div class="card">
-                  <img src="./img/fd-npslushie.jpg" class="card-img-top img-fluid" alt="Rainbow Slushie">
+                  <a id="hover-showBtn" class="add-cartTag"><img src="./img/fd-npslushie.jpg" class="card-img-top img-fluid" alt="Rainbow Slushie"></a>
+                  <a class="add-cartIcon">Add to Cart</a>
                   <div class="card-body">
                     <div class="card-title">Rainbow Slushie
                       </div>
@@ -312,11 +318,11 @@
 
       <!-- Modal (Streaming Normal) -->
       <div class="modal fade" id="myModal" tabindex="-1">
-        <div class="modal-dialog modal-fullscreen-sm-down modal-xl">
+        <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
               <h3 class="modal-title">GrandFlix Live Streaming</h3>
-              <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><h5>Close</h5></button>
+              <button type="button" class="btn btn-danger btn-md" data-bs-dismiss="modal"><h5>Close</h5></button>
             </div>
             <div class="modal-body">
               <div class= "embed-responsive embed-responsive-16by9 d-flex justify-content-center">
@@ -339,14 +345,14 @@
               <h3><br>Sorry, this is just for fun.. :(</h3>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Leave Now!</button>
+              <button type="button" class="btn btn-danger btn-md" data-bs-dismiss="modal">Leave Now!</button>
             </div>
           </div>
         </div>
       </div>
       <!-- Modal (Streaming BB) -->
       <div class="modal fade" id="bbModal" tabindex="-1">
-        <div class="modal-dialog modal-fullscreen-sm-down modal-xl">
+        <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
               <h3 class="modal-title">GrandFlix Live Streaming</h3>
@@ -508,5 +514,6 @@
   12. resizing for mobile
   13. rainbow border for cart page
   14. possible cart entry and removal effects
+  15. double click on food photo to add to cart? or single click to reveal add to cart button
 
 -->

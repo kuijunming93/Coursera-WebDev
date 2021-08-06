@@ -1,5 +1,7 @@
 //JS FOR CART SYSTEM
 let carts = document.querySelectorAll('.add-cart');
+let cartsTag = document.querySelectorAll('.add-cartTag');
+let cartsIcon = document.querySelectorAll('.add-cartIcon');
 
 let cartBtn = document.querySelector('#cart-button');
 cartBtn.addEventListener('click', () =>{
@@ -97,6 +99,19 @@ for (let i=0; i < carts.length; i++){
         cartCount(products[i]);
     });
 };
+
+for (let i=0; i < cartsIcon.length; i++){
+    cartsIcon[i].addEventListener('click', () => {
+        cartCount(products[i]);
+    });
+};
+
+for (let i=0; i < cartsTag.length; i++){
+    cartsTag[i].addEventListener('click', () => {
+        cartCount(products[i]);
+    });
+};
+
 
 //FUNCTION
 function cartCount(selectedItem) {
@@ -226,3 +241,10 @@ myNavTogglebtn.addEventListener('blur', () =>{
 //        cartModal.classList.add("active");
 //    };
 //});
+
+//BASIC CAROUSEL 1 SETTING
+var myCarousel = document.querySelector('#myCarousel');
+var carousel = new bootstrap.Carousel(myCarousel, {
+    pause: 'hover',
+    touch: true
+});

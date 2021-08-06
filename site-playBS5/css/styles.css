@@ -13,7 +13,6 @@ body{
     padding: 10px;
     z-index: 2;
     border-radius: 5px;
-    
 }
 
 #cart-button.cart-btn-class:hover, #cart-button.cart-btn-class .active{
@@ -246,6 +245,31 @@ button.dumpButton{
     transform-origin: center center;  filter: brightness(90%);
 }
 
+/**FOOD MENU BUTTON STYLING**/
+a.add-cartIcon{
+    position: absolute;
+    width: 100%;
+    vertical-align: middle;
+    background-color: transparent;
+    opacity: 0.8;
+    color: transparent;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.35rem;
+}
+
+#hover-showBtn.add-cartTag{
+    cursor: pointer !important;
+}
+
+#hover-showBtn.add-cartTag:hover ~ a.add-cartIcon, a.add-cartIcon:hover{
+    background-color: black;
+    color: white;
+}
+
+
 /**MOVIE FEATURES STYLING GRAPHICS**/
 #movies-feature .img-style1{
     -webkit-animation: animateGlow 1.5s infinite;
@@ -321,6 +345,9 @@ button.dumpButton{
     .productModal span{
         font-size: 80%;    
     }
+    a.add-cartIcon{
+        font-size: 1.1rem;
+    }
 
 }
 
@@ -330,7 +357,8 @@ button.dumpButton{
     }
     /**CAROUSEL 2 MOBILE VIEW SIZING**/
     .swiper-slide .btn{
-        max-width: 300px;
+        max-width: 450px;
+        font-size: 180%;
     }
     .swiper-container{
         height: 10rem;
@@ -340,10 +368,10 @@ button.dumpButton{
         height: 36rem;
     }
     .swiper-slide .title{
-        font-size: 110%;
+        font-size: 125%;
     }
     .swiper-slide .subtitle{
-        font-size: 80%;
+        font-size: 85%;
     }
     .btn-warning h3{
         font-size: 70%;
@@ -374,7 +402,9 @@ button.dumpButton{
     .productModal span{
         font-size: 70%;    
     }
-
+    a.add-cartIcon{
+        font-size: 1.1rem;
+    }
 }
 @media(min-width:400px) and (max-width:480px){
     #food-menu .card{
