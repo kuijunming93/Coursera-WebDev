@@ -131,6 +131,7 @@ function cartCount(selectedItem) {
     setItems(selectedItem);
     addCost(selectedItem);
     animateCart();
+    soundPop.currentTime=0;
     soundPop.play();
 }
 
@@ -222,6 +223,7 @@ function dumpItem(selector){
         localStorage.setItem("mainCart", null);
         document.querySelector('.cart-btn-class span').textContent = 0;
     };    
+    soundDrop.currentTime=0;
     soundDrop.play();
 }
 
