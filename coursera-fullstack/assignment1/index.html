@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- browser-sync start --server --directory --files "*" -->
         <title>Ristorante Con Fusion</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -50,7 +51,7 @@
             </div>
             <div class="row row-header">
                 <div class="col-12">
-                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#reserveModal" style="margin-top: 10px; ">Reserve Table</button>
+                    <button id="reserveTableBtn" type="button" class="btn btn-primary btn-lg" style="margin-top: 10px; ">Reserve Table</button>
                 </div>
             </div>
         </div>
@@ -222,5 +223,4 @@
     <script src="js/script.js"></script>
 </body>
 
-<!-- browser-sync start --server --directory --files "*" -->
 </html>
