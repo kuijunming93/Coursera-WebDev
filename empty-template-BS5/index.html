@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mockup</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style type="text/css"></style>
+  </head>
+
+<body> <!-- START OF CONTENT, NESTING EXERCISE -->
+  <div id="myCon" class="container">
+    <div class="row" style="border: green solid 1px;height: 200px;">
+      <div class="col-8 col-sm-6 align-self-end">first half</div>
+      <div class="col-4 col-sm-6 align-self-center">second half</div>
+    </div>
+    <div class="row " style="border: red solid 1px;height: 100px;">
+      <div class="col-6">
+        2nd row
+      </div>
+      <div class="col-6" style="border: red solid 1px;height: 100px">
+        <div class="row align-items-center" style="border: black solid 1px;height: 100px">
+          <div class="col-8">inner box 1</div>
+          <div class="col-4">inner box 2</div>
+        </div>
+      </div>      
+    </div>
+  </div> <!--in BS5, always try to set the height of your row in advance if you want to do vertical positioning-->
+
+  
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+<!--browser-sync start --server --directory --files "*" -->
