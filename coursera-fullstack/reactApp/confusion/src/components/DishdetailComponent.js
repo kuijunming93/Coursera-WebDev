@@ -1,5 +1,6 @@
 import React from "react";
-import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 function RenderDish({dish}){
     if (dish!=null){
@@ -17,9 +18,9 @@ function RenderDish({dish}){
     } else return null;
 }
 
-function RenderComments({dish}){
-    if (dish!=null){
-        const comments = dish.comments.map(comment =>{
+function RenderComments({comments}){
+    if (comments!=null){
+        const commentsDisplay = comments.map(comment =>{
             return (
                 <div key={comment.id}>
                     {comment.comment}
@@ -31,7 +32,7 @@ function RenderComments({dish}){
         return (
             <div>
                 <div><h2>Comments</h2></div>
-                {comments}
+                {commentsDisplay}
             </div>
         );
     } else return null;
@@ -40,13 +41,23 @@ function RenderComments({dish}){
 const Dishdetail = (props) =>{
     return(
         <div className="container">
+            <div className="row">
+                    <Breadcrumb>
+                        <BreadcrumbItem><Link to="/menu">Menu</Link></BreadcrumbItem>
+                        <BreadcrumbItem active>{props.dish.name}</BreadcrumbItem>
+                    </Breadcrumb>
+                    <div className="col-12">
+                        <h3>{props.dish.name}</h3>
+                        <hr />
+                    </div>                
+                </div>
             <h1>Selected Option</h1>
             <div className="row">
                 <div  className="col-12 col-md-5 m-1">
-                    <RenderDish dish={props.selectedDish} />
+                    <RenderDish dish={props.dish} />
                 </div>
                 <div  className="col-12 col-md-5 m-1">
-                    <RenderComments dish={props.selectedDish}/>
+                    <RenderComments dish={props.comments}/>
                 </div>
             </div>
         </div>
