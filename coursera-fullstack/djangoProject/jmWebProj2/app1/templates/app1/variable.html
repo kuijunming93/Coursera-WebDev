@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% if acknowledgeUser %}
+        <h1>Welcome to Variable HTML - {{firstName | lower | capfirst}} {{lastName | lower | capfirst}}</h1>
+    {% else %}
+        <h1>Welcome to Variable HTML</h1>
+    {% endif %}
+    
+    <ol>
+        {% for key,val in traits.items%}
+        <li>{{key}} -> {{val}}</li>
+        {% endfor %}
+    </ol>
+
+    <h2>Another iteration possible</h2>
+    <ul>
+        {% for item in details%}
+        <li>{{item}}</li>
+        {% endfor %}
+    </ul>
+    
+</body>
+</html>
