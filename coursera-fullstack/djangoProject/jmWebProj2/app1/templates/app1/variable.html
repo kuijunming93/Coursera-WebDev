@@ -1,11 +1,7 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+{% extends 'base.html'%}
+
+{% block base %}
+
     {% if acknowledgeUser %}
         <h1>Welcome to Variable HTML - {{firstName | lower | capfirst}} {{lastName | lower | capfirst}}</h1>
     {% else %}
@@ -24,6 +20,9 @@
         <li>{{item}}</li>
         {% endfor %}
     </ul>
-    
-</body>
-</html>
+
+    <h3>
+        <a href="{% url 'app1:app1Home'%}">Redirect to Home</a>
+    </h3>
+
+{% endblock %}
