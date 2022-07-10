@@ -20,3 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('app1/', include('app1.urls')),
 ]
+
+handler404 = 'jmWebProj2.views.pageNotFound404'
